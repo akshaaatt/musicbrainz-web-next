@@ -98,7 +98,7 @@ class Intro extends React.Component {
                         <div className="col-lg-9 d-flex flex-column justify-content-center">
                             <h1 data-aos="fade-up" style={{marginTop: "20px"}}>The Music Database</h1>
                             <h2 data-aos="fade-up" data-aos-delay="400" >
-                                World's Biggest Open Source Music Database
+                                World&apos;s Biggest Open Source Music Database
                             </h2>
 
                             <div className="row search-margins">
@@ -146,6 +146,7 @@ class Intro extends React.Component {
                                             return <div id={"type"+data.key} className="chip chip--active" onClick={() => onChipClick(data.label)}>{data.label}</div>
                                         }
                                         return (
+                                            // eslint-disable-next-line react/jsx-key
                                             <div id={"type"+data.key} className="chip" onClick={() => onChipClick(data.label)}>{data.label}</div>
                                         );
                                     })
@@ -195,18 +196,18 @@ class Intro extends React.Component {
                                         <h5 className="card-title text-center"><span className=" color-purple">News</span> & <span className="color-orange">Updates</span></h5>
                                     </div>
                                     <ul className="list-group list-group-flush">
-                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/10/07/picard-2-7-beta-1/" target="_blank" className="card-link">Picard 2.7 Beta 1</a></li>
-                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/10/06/picard-2-6-4-released/" className="card-link" target="_blank">Picard 2.6.4 released</a></li>
-                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/10/04/musicbrainz-server-update-2021-10-04/" className="card-link" target="_blank">MusicBrainz Server update, 2021-10-04</a></li>
-                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/09/20/musicbrainz-server-update-2021-09-20/" className="card-link" target="_blank">MusicBrainz Server update, 2021-09-20</a></li>
-                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/09/06/musicbrainz-server-update-2021-09-06/" className="card-link" target="_blank">MusicBrainz Server update, 2021-09-06</a></li>
-                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/09/01/acoustic-similarity-in-acousticbrainz/" className="card-link" target="_blank">Acoustic similarity in AcousticBrainz</a></li>
-                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/08/23/gsoc-2021-pin-recordings-and-critiquebrainz-integration-in-listenbrainz/" className="card-link" target="_blank">GSoC 2021: Pin Recordings and CritiqueBrainz Integration in ListenBrainz</a></li>
+                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/10/07/picard-2-7-beta-1/" target="_blank" rel="noopener noreferrer" className="card-link">Picard 2.7 Beta 1</a></li>
+                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/10/06/picard-2-6-4-released/" className="card-link" target="_blank" rel="noopener noreferrer">Picard 2.6.4 released</a></li>
+                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/10/04/musicbrainz-server-update-2021-10-04/" className="card-link" target="_blank" rel="noopener noreferrer">MusicBrainz Server update, 2021-10-04</a></li>
+                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/09/20/musicbrainz-server-update-2021-09-20/" className="card-link" target="_blank" rel="noopener noreferrer">MusicBrainz Server update, 2021-09-20</a></li>
+                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/09/06/musicbrainz-server-update-2021-09-06/" className="card-link" target="_blank" rel="noopener noreferrer">MusicBrainz Server update, 2021-09-06</a></li>
+                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/09/01/acoustic-similarity-in-acousticbrainz/" className="card-link" target="_blank" rel="noopener noreferrer">Acoustic similarity in AcousticBrainz</a></li>
+                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/08/23/gsoc-2021-pin-recordings-and-critiquebrainz-integration-in-listenbrainz/" className="card-link" target="_blank" rel="noopener noreferrer">GSoC 2021: Pin Recordings and CritiqueBrainz Integration in ListenBrainz</a></li>
                                     </ul>
                                 <div className="card-body align-items-center d-flex justify-content-center">
-                                    <a href="https://twitter.com/MusicBrainz" target="_blank" className="card-link"> <i className="fab fa-twitter"/></a>
-                                    <a href="https://blog.metabrainz.org" className="card-link" target="_blank"> <i className="bi bi-rss-fill"/></a>
-                                    <a href="https://community.metabrainz.org" className="card-link" target="_blank">Community Forum</a>
+                                    <a href="https://twitter.com/MusicBrainz" target="_blank" rel="noopener noreferrer" className="card-link"> <i className="fab fa-twitter"/></a>
+                                    <a href="https://blog.metabrainz.org" className="card-link" target="_blank" rel="noopener noreferrer"> <i className="bi bi-rss-fill"/></a>
+                                    <a href="https://community.metabrainz.org" className="card-link" target="_blank" rel="noopener noreferrer">Community Forum</a>
                                 </div>
                             </div>
                         </div>

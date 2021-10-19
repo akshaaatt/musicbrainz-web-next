@@ -10,7 +10,7 @@ function Intro(props) {
     }
 
     return(
-        <section id="faq" className="faq">
+        <section id="faq" className={"faq " + theme}>
             <div className="container" data-aos="fade-up">
 
                 <div className="section-title">
@@ -29,11 +29,11 @@ function Intro(props) {
                             </a>
                             <div id="faq-list-1" className="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    You don't need to provide an email address, unless you want to change the contents of the database. If you do, the email address will need to be verified, so that other MusicBrainz editors can better communicate with you.
+                                    You don&apos;t need to provide an email address, unless you want to change the contents of the database. If you do, the email address will need to be verified, so that other MusicBrainz editors can better communicate with you.
                                     If you enter your email address:
 
                                     You will be able to enter changes into the database (see Introduction to Editing).
-                                    Other editors will be able to send messages using the "Send email to editor" function.
+                                    Other editors will be able to send messages using the &quot;Send email to editor&quot; function.
                                     You will be notified when edit notes are added to your edits.
                                     You will have the option to subscribe to the artists you like and be notified when new edits are entered for them.
                                     In all cases your email address will not be revealed to other MusicBrainz users.
@@ -49,7 +49,7 @@ function Intro(props) {
                                 <i className="bi bi-chevron-up icon-close"/></a>
                             <div id="faq-list-2" className="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    Rest assured that we will not pass your email address on to anyone, including other MusicBrainz users, without your most explicit consent. At any time you can fill in your email address if it's currently blank, blank it if it's currently filled in, or change from one address to another. Read on for the full MusicBrainz Privacy Policy.
+                                    Rest assured that we will not pass your email address on to anyone, including other MusicBrainz users, without your most explicit consent. At any time you can fill in your email address if it&apos;s currently blank, blank it if it&apos;s currently filled in, or change from one address to another. Read on for the full MusicBrainz Privacy Policy.
                                     We will not send you any newsletters, promotional mailings, etc.
                                 </p>
                             </div>
@@ -62,7 +62,7 @@ function Intro(props) {
                                 <i className="bi bi-chevron-down icon-show"/><i className="bi bi-chevron-up icon-close"/></a>
                             <div id="faq-list-3" className="collapse" data-bs-parent=".faq-list">
                                 <p>
-                                    You can't completely delete your account. We need to keep at least the information that an account existed at some point, so that the database is kept consistent. However, you can automatically remove all your personal information by editing your profile and clicking the delete account link.
+                                    You can&apos;t completely delete your account. We need to keep at least the information that an account existed at some point, so that the database is kept consistent. However, you can automatically remove all your personal information by editing your profile and clicking the delete account link.
 
                                     This will irreversibly rename your account and clear your password, biography, email address, preferences, subscriptions, collections, ratings and tags, as well as prevent any further logins.
                                 </p>
@@ -110,7 +110,7 @@ function Intro(props) {
 
                                     If your edit receives more yes votes than no votes, it will be applied after 7 days.
 
-                                    For many edit types (anything that wouldn't result in lost data), an Auto-editor may approve your edit to apply it immediately. This is quite common for typo fixes, adding URL relationships and fixes to obvious mistakes but it is at the Auto-editor's discretion and they are not required to do so.
+                                    For many edit types (anything that wouldn&apos;t result in lost data), an Auto-editor may approve your edit to apply it immediately. This is quite common for typo fixes, adding URL relationships and fixes to obvious mistakes but it is at the Auto-editor&apos;s discretion and they are not required to do so.
 
                                     If your edit is to a popular artist that has many subscribers, you are likely to gather votes more quickly. If you provide evidence to back up your edits (as suggested in the Code of Conduct and How to Write Edit Notes) and your edits are of good quality, you will also collect yes votes more quickly.                                </p>
                             </div>

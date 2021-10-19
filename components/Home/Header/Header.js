@@ -41,15 +41,15 @@ function Header(props) {
               </li>
 
               <li className="nav-item">
-                <a href="https://musicbrainz.org/doc/MusicBrainz_Documentation" target="_blank" className="nav-link " rel="noreferrer">Docs</a>
+                <a href="https://musicbrainz.org/doc/MusicBrainz_Documentation" target="_blank" rel="noopener noreferrer" className="nav-link " >Docs</a>
               </li>
 
               <li className="nav-item">
-                <a href="https://musicbrainz.org/doc/MusicBrainz_API" target="_blank" className="nav-link " rel="noreferrer">API</a>
+                <a href="https://musicbrainz.org/doc/MusicBrainz_API" target="_blank" rel="noopener noreferrer" className="nav-link " >API</a>
               </li>
 
               <li className="nav-item">
-                <a href="https://blog.metabrainz.org" target="_blank" className="nav-link " rel="noreferrer">Community</a>
+                <a href="https://blog.metabrainz.org" target="_blank" rel="noopener noreferrer" className="nav-link " >Community</a>
               </li>
 
               <li className="nav-item dropdown">

@@ -33,7 +33,7 @@ function About(props) {
                             <li><i className="bi bi-check-circle"/>Like Wikipedia, MusicBrainz is maintained by a global community of users and we want everyone — including you — to participate and contribute.
                             </li>
                         </ul>
-                        <a href="https://musicbrainz.org" target="_blank" className="read-more" rel="noreferrer">Read More <i className="bi bi-long-arrow-right"/></a>
+                        <a href="https://musicbrainz.org" target="_blank" rel="noopener noreferrer" className="read-more" >Read More <i className="bi bi-long-arrow-right"/></a>
                     </div>
                 </div>
 
