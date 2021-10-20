@@ -1,5 +1,5 @@
 import React from "react";
-import ThemeSwitchButton from "../ThemeSwitchButton/ThemeSwitchButton";
+import ThemeSwitchButton from "../../Utils/ThemeSwitchButton/ThemeSwitchButton";
 import SearchOverlay from "./SearchOverlay";
 
 function Header(props) {
