@@ -3,18 +3,12 @@ import ThemeSwitchButton from "../../Utils/ThemeSwitchButton/ThemeSwitchButton";
 import SearchOverlay from "./SearchOverlay";
 
 function Header(props) {
-  let theme, typeCurrent = "Artist";
-  if (props.isDarkThemeActive) {
-    theme = "theme-dark";
-  }
-  else {
-    theme = "theme-light";
-  }
+  let typeCurrent = "Artist";
 
   return (
       <>
       <SearchOverlay isDarkThemeActive={props.isDarkThemeActive}/>
-      <nav className={"navbar navbar-default navbar-trans navbar-expand-lg fixed-top " + theme}>
+      <nav className={"navbar navbar-default navbar-trans navbar-expand-lg fixed-top theme"}>
         <div className="container">
           <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span/>

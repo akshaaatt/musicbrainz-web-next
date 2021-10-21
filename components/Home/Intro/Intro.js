@@ -52,13 +52,7 @@ class Intro extends React.Component {
             {key: 15, label: 'Documentation'},
         ];
 
-        let theme, typeCurrent = "Artist";
-        if (this.props.isDarkThemeActive) {
-            theme = "theme-dark";
-        }
-        else {
-            theme = "theme-light";
-        }
+        let typeCurrent = "Artist";
 
         function onChipClick(type) {
             const indexPrev = chipData.map(e => e.label).indexOf(typeCurrent);
@@ -92,7 +86,7 @@ class Intro extends React.Component {
         }
 
         return (
-            <section id="intro" className={"intro d-flex align-items-center "+theme}>
+            <section id="intro" className="intro d-flex align-items-center theme">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-9 d-flex flex-column justify-content-center">

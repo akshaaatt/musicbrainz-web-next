@@ -1,14 +1,8 @@
 import React from "react";
 
 function About(props) {
-    let theme;
-    if (props.isDarkThemeActive) {
-        theme = "theme-dark";
-    } else {
-        theme = "theme-light";
-    }
     return(
-        <section id="about" className={"about " + theme}>
+        <section id="about" className="about theme">
             <div className="container">
 
                 <div className="row">
