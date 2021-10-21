@@ -1,4 +1,3 @@
-
 const SearchOverlay = props => {
     let theme, typeCurrent;
     if (props.isDarkThemeActive) {

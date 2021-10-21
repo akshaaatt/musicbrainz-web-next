@@ -1,6 +1,4 @@
-import React from "react";
-
-function AppDownload(props) {
+export default function AppDownload(props) {
     let theme;
     if (props.isDarkThemeActive) {
         theme = "theme-dark";
@@ -30,4 +28,3 @@ function AppDownload(props) {
         </section>
     )
 }
-export default AppDownload;

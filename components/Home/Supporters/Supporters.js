@@ -1,6 +1,4 @@
-import React from "react";
-
-function Supporters(props) {
+export default function Supporters(props) {
     let theme;
     if (props.isDarkThemeActive) {
         theme = "theme-dark";
@@ -96,5 +94,3 @@ function Supporters(props) {
         </section>
     )
 }
-
-export default Supporters;

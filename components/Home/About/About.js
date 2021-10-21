@@ -1,6 +1,4 @@
-import React from "react";
-
-function About(props) {
+export default function About(props) {
     let theme;
     if (props.isDarkThemeActive) {
         theme = "theme-dark";
@@ -41,4 +39,3 @@ function About(props) {
         </section>
     )
 }
-export default About;

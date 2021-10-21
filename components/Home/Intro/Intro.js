@@ -1,6 +1,5 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import axios from "axios";
 
 const responsive = {
     desktop: {
@@ -17,7 +16,7 @@ const responsive = {
     }
 };
 
-class Intro extends React.Component {
+export default class Intro extends React.Component {
 
     state = {
         additionalTransform: 0,
@@ -25,10 +24,10 @@ class Intro extends React.Component {
     };
 
     componentDidMount() {
-        axios
-            .get(`https://itunes.apple.com/us/rss/topalbums/limit=100/json`)
+        fetch(`https://itunes.apple.com/us/rss/topalbums/limit=100/json`)
+            .then(response => response.json())
             .then(res => {
-                this.setState({ posts: res.data.feed.entry });
+                this.setState({ posts: res.feed.entry });
             });
     }
 
@@ -217,5 +216,3 @@ class Intro extends React.Component {
         )
     }
 }
-
-export default Intro;

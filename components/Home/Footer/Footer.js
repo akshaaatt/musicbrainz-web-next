@@ -1,5 +1,3 @@
-import React from "react";
-
 const Footer = props => {
   let theme;
   if (props.isDarkThemeActive) {

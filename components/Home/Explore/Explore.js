@@ -1,6 +1,4 @@
-import React from "react";
-
-function Explore(props) {
+export default function Explore(props) {
     let theme;
     if (props.isDarkThemeActive) {
         theme = "theme-dark";
@@ -93,4 +91,3 @@ function Explore(props) {
         </section>
     )
 }
-export default Explore;

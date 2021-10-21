@@ -1,6 +1,4 @@
-import React from "react";
-
-function Facts(props) {
+export default function Facts(props) {
     let theme;
     if (props.isDarkThemeActive) {
         theme = "counts theme-dark";
@@ -60,4 +58,3 @@ function Facts(props) {
         </section>
     )
 }
-export default Facts;

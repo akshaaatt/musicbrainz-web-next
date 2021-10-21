@@ -1,8 +1,7 @@
-import React from "react";
 import ThemeSwitchButton from "../../Utils/ThemeSwitchButton/ThemeSwitchButton";
 import SearchOverlay from "./SearchOverlay";
 
-function Header(props) {
+export default function Header(props) {
   let theme, typeCurrent = "Artist";
   if (props.isDarkThemeActive) {
     theme = "theme-dark";
@@ -150,5 +149,3 @@ const attach = e => {
   document.body.classList.add('box-collapse-open')
   document.body.classList.remove('box-collapse-closed')
 }
-
-export default Header;

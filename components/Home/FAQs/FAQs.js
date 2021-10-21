@@ -1,6 +1,4 @@
-import React from "react";
-
-function Intro(props) {
+export default function FAQs(props) {
     let theme;
     if (props.isDarkThemeActive) {
         theme = "dark";
@@ -123,4 +121,3 @@ function Intro(props) {
         </section>
     )
 }
-export default Intro;

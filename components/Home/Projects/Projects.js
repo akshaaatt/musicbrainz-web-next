@@ -1,6 +1,4 @@
-import React from "react";
-
-function Projects(props) {
+export default function Projects(props) {
     let theme;
     if (props.isDarkThemeActive) {
         theme = "theme-dark";
@@ -120,4 +118,3 @@ function Projects(props) {
         </section>
     )
 }
-export default Projects;
