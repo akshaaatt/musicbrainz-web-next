@@ -1,12 +1,6 @@
 export default function Supporters(props) {
-    let theme;
-    if (props.isDarkThemeActive) {
-        theme = "theme-dark";
-    } else {
-        theme = "theme-light";
-    }
     return (
-        <section id="supporters" className={"section-with-bg "+ theme}>
+        <section id="supporters" className={"section-with-bg "+ props.theme}>
 
             <div className="container" data-aos="fade-up">
                 <div className="section-header">

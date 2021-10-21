@@ -1,14 +1,6 @@
 export default function FAQs(props) {
-    let theme;
-    if (props.isDarkThemeActive) {
-        theme = "dark";
-    }
-    else {
-        theme = "light";
-    }
-
     return(
-        <section id="faq" className={"faq " + theme}>
+        <section id="faq" className={"faq " + props.theme}>
             <div className="container" data-aos="fade-up">
 
                 <div className="section-title">

@@ -1,13 +1,6 @@
 export default function Facts(props) {
-    let theme;
-    if (props.isDarkThemeActive) {
-        theme = "counts theme-dark";
-    } else {
-        theme = "counts theme-light";
-    }
-
     return(
-        <section id="counts" className={theme}>
+        <section id="counts" className={props.theme}>
             <div className="container" data-aos="fade-up">
 
                 <div className="row gy-4">

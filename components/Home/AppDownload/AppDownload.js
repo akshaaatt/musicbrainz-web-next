@@ -1,12 +1,6 @@
 export default function AppDownload(props) {
-    let theme;
-    if (props.isDarkThemeActive) {
-        theme = "theme-dark";
-    } else {
-        theme = "theme-light";
-    }
     return(
-        <section className={"section cta-section "+theme}>
+        <section className={"section cta-section "+props.theme}>
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-md-6 me-auto text-center text-md-start mb-5 mb-md-0">

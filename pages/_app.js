@@ -3,17 +3,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 import "bootstrap-icons/font/bootstrap-icons.css" ;
 import "react-multi-carousel/lib/styles.css";
 import '../styles/globals.css';
-import '../styles/About.css';
-import '../styles/AppDownload.css';
-import '../styles/Explore.css';
-import '../styles/Facts.css';
-import '../styles/Intro.css';
-import '../styles/SearchOverlay.css';
-import '../styles/Header.css';
+import '../styles/Home.css';
 import '../styles/ThemeSwitchButton.css';
-import '../styles/Supporters.css';
-import '../styles/Projects.css';
-import '../styles/Footer.css';
 import '../styles/FAQs.css';
 
 function MyApp({ Component, pageProps }) {

@@ -1,12 +1,6 @@
 export default function Explore(props) {
-    let theme;
-    if (props.isDarkThemeActive) {
-        theme = "theme-dark";
-    } else {
-        theme = "theme-light";
-    }
     return(
-        <section id="services" className={"services "+theme}>
+        <section id="services" className={"services "+props.theme}>
             <div className="container">
 
                 <div className="section-title">

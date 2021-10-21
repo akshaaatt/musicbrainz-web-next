@@ -10,23 +10,36 @@ import Facts from "../components/Home/Facts/Facts";
 import Explore from "../components/Home/Explore/Explore";
 import Projects from "../components/Home/Projects/Projects";
 
-function Home() {
+export default function Home() {
   const DARK_MODE_KEY = 'dark_mode';
 
   function getSetting() {
-    try {
-      return window.localStorage.getItem(DARK_MODE_KEY) === true;
-    } catch (e) { return false; }
+      let preference = 'theme-dark';
+      try {
+          preference = window.localStorage.getItem(DARK_MODE_KEY);
+          if (null === preference) {
+              if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                  preference = 'theme-dark';
+              } else {
+                  preference = 'theme-light';
+              }
+          }
+          return preference;
+      }
+      catch (e) {
+          console.log(e);
+          return preference;
+      }
   }
   function updateSetting (value) {
     try {
       window.localStorage.setItem(DARK_MODE_KEY, value);
     } catch (e) {}
   }
-  const [ dark, setDark ] = useState(getSetting);
+  const [ theme, setTheme ] = useState(getSetting);
 
   const toggleDarkMode = useCallback(function () {
-    setDark(prevState => {
+      setTheme(prevState => {
       const newState = !prevState;
       updateSetting(newState);
       return newState;
@@ -35,15 +48,15 @@ function Home() {
 
   return (
       <div>
-        <Header isDarkThemeActive={dark} switchActiveTheme={toggleDarkMode}/>
-        <Intro isDarkThemeActive={dark}/>
-        <About isDarkThemeActive={dark}/>
-        <Facts isDarkThemeActive={dark}/>
-        <Projects isDarkThemeActive={dark}/>
-        <Explore isDarkThemeActive={dark}/>
-        <Supporters isDarkThemeActive={dark}/>
-        <AppDownload isDarkThemeActive={dark}/>
-        <Footer isDarkThemeActive={dark} />
+        <Header theme={theme} switchActiveTheme={toggleDarkMode}/>
+        <Intro theme={theme}/>
+        <About theme={theme}/>
+        <Facts theme={theme}/>
+        <Projects theme={theme}/>
+        <Explore theme={theme}/>
+        <Supporters theme={theme}/>
+        <AppDownload theme={theme}/>
+        <Footer theme={theme}/>
         <ScrollToTop
             icon="bi bi-caret-up-fill"
             backgroundColor = "#EB743B"
@@ -54,5 +67,3 @@ function Home() {
       </div>
   );
 }
-
-export default Home;

@@ -1,12 +1,6 @@
 const Footer = props => {
-  let theme;
-  if (props.isDarkThemeActive) {
-    theme = "theme-dark";
-  } else {
-    theme = "theme-light";
-  }
   return (
-      <section className={"section-footer "+theme}>
+      <section className={"section-footer "+props.theme}>
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-4">

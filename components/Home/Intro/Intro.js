@@ -51,13 +51,7 @@ export default class Intro extends React.Component {
             {key: 15, label: 'Documentation'},
         ];
 
-        let theme, typeCurrent = "Artist";
-        if (this.props.isDarkThemeActive) {
-            theme = "theme-dark";
-        }
-        else {
-            theme = "theme-light";
-        }
+        let typeCurrent = "Artist";
 
         function onChipClick(type) {
             const indexPrev = chipData.map(e => e.label).indexOf(typeCurrent);
@@ -78,7 +72,7 @@ export default class Intro extends React.Component {
                 return;
             }
             let searchType;
-            if(typeCurrent==='CD Stud'){
+            if(typeCurrent==='CD Stub'){
                 searchType = "cdstub";
             }
             else if(typeCurrent === "Documentation"){
@@ -91,7 +85,7 @@ export default class Intro extends React.Component {
         }
 
         return (
-            <section id="intro" className={"intro d-flex align-items-center "+theme}>
+            <section id="intro" className={"intro d-flex align-items-center "+this.props.theme}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-9 d-flex flex-column justify-content-center">

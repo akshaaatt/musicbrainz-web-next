@@ -1,6 +1,6 @@
 export default function ThemeSwitchButton(props) {
     let active, buttonClassName;
-    if (props.dark) {
+    if (props.theme === 'theme-dark') {
         active = "dark";
         buttonClassName = "SwitchBtn SwitchBtn-Active";
     } else {
