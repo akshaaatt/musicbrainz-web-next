@@ -1,20 +1,20 @@
-//todo figure out what goes here
-
 this project uses [next](https://nextjs.org/docs/getting-started)
 
 //my dev environment
-* debian sid
-* gnome
-* atom
-* firefox
+* [debian sid](https://wiki.debian.org/DebianUnstable)
+* [gnome 41](https://help.gnome.org/misc/release-notes/41.0/)
+* [gitg](https://wiki.gnome.org/Apps/Gitg)
+* [atom](https://atom.io/)
+* firefox 93
 * [npm](https://packages.debian.org/sid/npm)
 * [nvm](https://github.com/nvm-sh/nvm)
+
+// running dev
 ```
-node --version
-v17.0.1
-npm install
-npm WARN deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
-npm WARN deprecated querystring@0.2.0: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
-npm run dev
-code: 'ERR_OSSL_EVP_UNSUPPORTED'
+$ nvm install --lts
+$ node --version
+v14.18.1
+$ npm ci
+$ npm run dev
 ```
+http://localhost:3000/
