@@ -1,6 +1,6 @@
 import React from "react";
 
-function AppDownload(props) {
+const AppDownload = () => {
     return(
         <section className="section cta-section theme">
             <div className="container">

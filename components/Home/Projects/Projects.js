@@ -1,6 +1,6 @@
 import React from "react";
 
-function Projects(props) {
+const Projects = () => {
     return(
         <section id="features" className="section-bg theme">
             <div className="container">

@@ -1,6 +1,6 @@
 import React from "react";
 
-function About(props) {
+const About = () => {
     return(
         <section id="about" className="about theme">
             <div className="container">

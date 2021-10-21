@@ -1,6 +1,6 @@
 import React from "react";
 
-function Facts(props) {
+const Facts = () => {
     return(
         <section id="counts" className="counts theme">
             <div className="container" data-aos="fade-up">

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Supporters(props) {
+const Supporters = () => {
     return (
         <section id="supporters" className="section-with-bg theme">
 

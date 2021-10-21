@@ -1,5 +1,5 @@
 
-const SearchOverlay = props => {
+const SearchOverlay = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         const query = document.getElementById('searchInput');

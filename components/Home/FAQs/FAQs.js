@@ -1,16 +1,8 @@
 import React from "react";
 
-function Intro(props) {
-    let theme;
-    if (props.isDarkThemeActive) {
-        theme = "dark";
-    }
-    else {
-        theme = "light";
-    }
-
+const Intro = () => {
     return(
-        <section id="faq" className={"faq " + theme}>
+        <section id="faq" className="faq theme">
             <div className="container" data-aos="fade-up">
 
                 <div className="section-title">

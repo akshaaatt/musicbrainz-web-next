@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = props => {
+const Footer = () => {
   return (
       <section className="section-footer theme">
         <div className="container">

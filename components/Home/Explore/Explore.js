@@ -1,6 +1,6 @@
 import React from "react";
 
-function Explore(props) {
+const Explore = () => {
     return(
         <section id="services" className="services theme">
             <div className="container">

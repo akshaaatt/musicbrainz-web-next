@@ -1,13 +1,12 @@
 import React from "react";
-import ThemeSwitchButton from "../../Utils/ThemeSwitchButton/ThemeSwitchButton";
 import SearchOverlay from "./SearchOverlay";
 
-function Header(props) {
+const Header = () => {
   let typeCurrent = "Artist";
 
   return (
       <>
-      <SearchOverlay isDarkThemeActive={props.isDarkThemeActive}/>
+      <SearchOverlay/>
       <nav className={"navbar navbar-default navbar-trans navbar-expand-lg fixed-top theme"}>
         <div className="container">
           <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,10 +51,6 @@ function Header(props) {
                   <a className="dropdown-item ">Profile</a>
                   <a className="dropdown-item ">Applications</a>
                   <a className="dropdown-item ">Subscriptions</a>
-                  <ThemeSwitchButton
-                      dark={props.isDarkThemeActive}
-                      changeTheme={props.switchActiveTheme}
-                  />
                   <a className="dropdown-item ">Logout</a>
                 </div>
               </li>
