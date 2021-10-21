@@ -11,11 +11,11 @@ import Explore from "../components/Home/Explore/Explore";
 import Projects from "../components/Home/Projects/Projects";
 
 function Home() {
-  let customExtraTheme = '';
+  let customTheme = 'theme';
   // todo: logic for custom theming beyond browser dark/light mode here
 
   return (
-      <div className={`theme ${customExtraTheme}`}>
+      <div className={customTheme}>
         <Header />
         <Intro />
         <About />
