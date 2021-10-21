@@ -7,7 +7,7 @@ const Header = () => {
   return (
       <>
       <SearchOverlay/>
-      <nav className={"navbar navbar-default navbar-trans navbar-expand-lg fixed-top theme"}>
+      <nav className={"navbar navbar-default navbar-trans navbar-expand-lg fixed-top"}>
         <div className="container">
           <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span/>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Facts = () => {
     return(
-        <section id="counts" className="counts theme">
+        <section id="counts" className="counts">
             <div className="container" data-aos="fade-up">
 
                 <div className="row gy-4">

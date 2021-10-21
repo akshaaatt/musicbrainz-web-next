@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-      <section className="section-footer theme">
+      <section className="section-footer">
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-4">

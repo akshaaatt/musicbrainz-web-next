@@ -2,7 +2,7 @@ import React from "react";
 
 const Projects = () => {
     return(
-        <section id="features" className="section-bg theme">
+        <section id="features" className="section-bg">
             <div className="container">
 
                 <div className="section-title">

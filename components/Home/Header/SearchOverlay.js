@@ -1,5 +1,6 @@
 
-const SearchOverlay = () => {
+const SearchOverlay = props => {
+    let typeCurrent;
     const handleSubmit = (event) => {
         event.preventDefault();
         const query = document.getElementById('searchInput');
@@ -48,7 +49,7 @@ const SearchOverlay = () => {
         return false;
     }
     return(
-        <div className="box-collapse theme">
+        <div className={"box-collapse"}>
             <div className="title-box-d">
                 <h3 className="title-d">Advanced Search</h3>
             </div>

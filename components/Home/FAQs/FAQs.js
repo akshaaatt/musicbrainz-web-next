@@ -2,7 +2,7 @@ import React from "react";
 
 const Intro = () => {
     return(
-        <section id="faq" className="faq theme">
+        <section id="faq" className="faq">
             <div className="container" data-aos="fade-up">
 
                 <div className="section-title">

@@ -2,7 +2,7 @@ import React from "react";
 
 const Explore = () => {
     return(
-        <section id="services" className="services theme">
+        <section id="services" className="services">
             <div className="container">
 
                 <div className="section-title">

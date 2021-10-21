@@ -11,39 +11,20 @@ import Explore from "../components/Home/Explore/Explore";
 import Projects from "../components/Home/Projects/Projects";
 
 function Home() {
-  const DARK_MODE_KEY = 'dark_mode';
-
-  function getSetting() {
-    try {
-      return window.localStorage.getItem(DARK_MODE_KEY) === true;
-    } catch (e) { return false; }
-  }
-  function updateSetting (value) {
-    try {
-      window.localStorage.setItem(DARK_MODE_KEY, value);
-    } catch (e) {}
-  }
-  const [ dark, setDark ] = useState(getSetting);
-
-  const toggleDarkMode = useCallback(function () {
-    setDark(prevState => {
-      const newState = !prevState;
-      updateSetting(newState);
-      return newState;
-    });
-  }, []);
+  let customExtraTheme = '';
+  // todo: logic for custom theming beyond browser dark/light mode here
 
   return (
-      <div>
-        <Header isDarkThemeActive={dark} switchActiveTheme={toggleDarkMode}/>
-        <Intro isDarkThemeActive={dark}/>
-        <About isDarkThemeActive={dark}/>
-        <Facts isDarkThemeActive={dark}/>
-        <Projects isDarkThemeActive={dark}/>
-        <Explore isDarkThemeActive={dark}/>
-        <Supporters isDarkThemeActive={dark}/>
-        <AppDownload isDarkThemeActive={dark}/>
-        <Footer isDarkThemeActive={dark} />
+      <div className={`theme ${customExtraTheme}`}>
+        <Header />
+        <Intro />
+        <About />
+        <Facts />
+        <Projects />
+        <Explore />
+        <Supporters />
+        <AppDownload />
+        <Footer />
         <ScrollToTop
             icon="bi bi-caret-up-fill"
             backgroundColor = "#EB743B"

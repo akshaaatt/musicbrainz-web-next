@@ -2,7 +2,7 @@ import React from "react";
 
 const Supporters = () => {
     return (
-        <section id="supporters" className="section-with-bg theme">
+        <section id="supporters" className="section-with-bg">
 
             <div className="container" data-aos="fade-up">
                 <div className="section-header">
