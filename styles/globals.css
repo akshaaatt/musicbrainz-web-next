@@ -21,7 +21,7 @@
   --projects-bg: linear-gradient(180deg, #f2f6fa 0%, #fff 100%);
 }
 
-.theme-dark  {
+.theme-dark {
   --box-color: #243133;
   --main-bg: #243133;
   --color: white;

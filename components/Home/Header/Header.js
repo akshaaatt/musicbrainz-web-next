@@ -52,7 +52,7 @@ export default function Header(props) {
                   <a className="dropdown-item ">Applications</a>
                   <a className="dropdown-item ">Subscriptions</a>
                   <ThemeSwitchButton
-                      dark={props.theme}
+                      dark={props.isDarkThemeActive}
                       changeTheme={props.switchActiveTheme}
                   />
                   <a className="dropdown-item ">Logout</a>
@@ -128,7 +128,7 @@ const attach = e => {
   if(query.value.length>1){
     let searchType;
     let typeCurrent = document.getElementById("typeHeader").value;
-    if(typeCurrent==='CD Stud'){
+    if(typeCurrent==='CD Stub'){
       searchType = "cdstub";
     }
     else if(typeCurrent === "Documentation"){

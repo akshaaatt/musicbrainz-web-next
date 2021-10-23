@@ -2,7 +2,7 @@ import React from "react";
 
 function ThemeSwitchButton(props) {
     let active, buttonClassName;
-    if (props.theme === "theme-dark") {
+    if (props.dark) {
         active = "dark";
         buttonClassName = "SwitchBtn SwitchBtn-Active";
     } else {

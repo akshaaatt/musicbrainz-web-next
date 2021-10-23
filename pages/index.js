@@ -11,55 +11,52 @@ import Explore from "../components/Home/Explore/Explore";
 import Projects from "../components/Home/Projects/Projects";
 
 export default function Home() {
-  const DARK_MODE_KEY = 'dark_mode';
+    const DARK_MODE_KEY = 'dark_mode';
 
-  function getSetting() {
-      let preference = 'theme-light';
-      if (typeof window !== 'undefined') {
-          preference = localStorage.getItem(DARK_MODE_KEY);
-          if (null === preference) {
-              if (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) {
-                  preference = 'theme-dark';
-              } else {
-                  preference = 'theme-light';
-              }
-          }
-      }
-      return preference;
-  }
-  function updateSetting (value) {
-      if (typeof window !== 'undefined') {
-          localStorage.setItem(DARK_MODE_KEY, value);
-      }
-  }
-  const [ theme, setTheme ] = useState(getSetting);
+    const DarkMode = {
+        getSetting: function () {
+            try {
+                return JSON.parse(window.localStorage.getItem(DARK_MODE_KEY)) === true;
+            } catch (e) { return false; }
+        },
 
-  const toggleDarkMode = useCallback(function () {
-      setTheme(prevState => {
-      const newState = !prevState;
-      updateSetting(newState);
-      return newState;
-    });
-  }, []);
+        updateSetting: function (value) {
+            try {
+                window.localStorage.setItem(DARK_MODE_KEY, JSON.stringify(value === true));
+            } catch (e) {}
+        }
+    };
 
-  return (
-      <div>
-        <Header theme={theme} switchActiveTheme={toggleDarkMode}/>
-        <Intro theme={theme}/>
-        <About theme={theme}/>
-        <Facts theme={theme}/>
-        <Projects theme={theme}/>
-        <Explore theme={theme}/>
-        <Supporters theme={theme}/>
-        <AppDownload theme={theme}/>
-        <Footer theme={theme}/>
-        <ScrollToTop
-            icon="bi bi-caret-up-fill"
-            backgroundColor = "#EB743B"
-            position={{ bottom: "12%", right: "0%" }}
-            hover={{ backgroundColor: "purple", opacity: "0.95" }}
-            margin="24px"
-        />
-      </div>
-  );
+    const [ dark, setDark ] = useState(DarkMode.getSetting);
+    const theme = dark ? "theme-dark" : "theme-light";
+
+    const toggleDarkMode = useCallback(function () {
+        setDark(prevState => {
+            const newState = !prevState;
+            DarkMode.updateSetting(prevState);
+            return newState;
+        });
+    }, [DarkMode]);
+
+
+    return (
+        <div>
+            <Header theme={theme} switchActiveTheme={toggleDarkMode} isDarkThemeActive={dark}/>
+            <Intro theme={theme}/>
+            <About theme={theme}/>
+            <Facts theme={theme}/>
+            <Projects theme={theme}/>
+            <Explore theme={theme}/>
+            <Supporters theme={theme}/>
+            <AppDownload theme={theme}/>
+            <Footer theme={theme}/>
+            <ScrollToTop
+                icon="bi bi-caret-up-fill"
+                backgroundColor = "#EB743B"
+                position={{ bottom: "12%", right: "0%" }}
+                hover={{ backgroundColor: "purple", opacity: "0.95" }}
+                margin="24px"
+            />
+        </div>
+    );
 }
