@@ -14,27 +14,23 @@ export default function Home() {
   const DARK_MODE_KEY = 'dark_mode';
 
   function getSetting() {
-      let preference = 'theme-dark';
-      try {
-          preference = window.localStorage.getItem(DARK_MODE_KEY);
+      let preference = 'theme-light';
+      if (typeof window !== 'undefined') {
+          preference = localStorage.getItem(DARK_MODE_KEY);
           if (null === preference) {
-              if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+              if (matchMedia && matchMedia('(prefers-color-scheme: dark)').matches) {
                   preference = 'theme-dark';
               } else {
                   preference = 'theme-light';
               }
           }
-          return preference;
       }
-      catch (e) {
-          console.log(e);
-          return preference;
-      }
+      return preference;
   }
   function updateSetting (value) {
-    try {
-      window.localStorage.setItem(DARK_MODE_KEY, value);
-    } catch (e) {}
+      if (typeof window !== 'undefined') {
+          localStorage.setItem(DARK_MODE_KEY, value);
+      }
   }
   const [ theme, setTheme ] = useState(getSetting);
 

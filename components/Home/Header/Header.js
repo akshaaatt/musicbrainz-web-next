@@ -52,7 +52,7 @@ export default function Header(props) {
                   <a className="dropdown-item ">Applications</a>
                   <a className="dropdown-item ">Subscriptions</a>
                   <ThemeSwitchButton
-                      theme={props.theme}
+                      dark={props.theme}
                       changeTheme={props.switchActiveTheme}
                   />
                   <a className="dropdown-item ">Logout</a>

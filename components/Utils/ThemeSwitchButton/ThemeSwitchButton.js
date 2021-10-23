@@ -1,6 +1,8 @@
-export default function ThemeSwitchButton(props) {
+import React from "react";
+
+function ThemeSwitchButton(props) {
     let active, buttonClassName;
-    if (props.theme === 'theme-dark') {
+    if (props.theme === "theme-dark") {
         active = "dark";
         buttonClassName = "SwitchBtn SwitchBtn-Active";
     } else {
@@ -25,3 +27,5 @@ export default function ThemeSwitchButton(props) {
         </div>
     );
 }
+
+export default ThemeSwitchButton;

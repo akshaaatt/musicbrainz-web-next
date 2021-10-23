@@ -7,7 +7,10 @@ import '../styles/Home.css';
 import '../styles/ThemeSwitchButton.css';
 import '../styles/FAQs.css';
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }) {
+    if (typeof window !== "undefined") {
+        require("bootstrap/dist/js/bootstrap");
+    }
     return (
         <>
             <Head>
@@ -26,14 +29,14 @@ function MyApp({ Component, pageProps }) {
                       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
                       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
                       crossOrigin="anonymous"/>
+
                 <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
                       rel="stylesheet"/>
 
                 <meta name="msapplication-TileColor" content="#da532c"/>
                 <meta name="theme-color" content="#ffffff"/>
 
-                <meta name="viewport"
-                      content="width=device-width, initial-scale=1"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <meta name="theme-color" content="#000000"/>
                 <meta
                     name="description"
@@ -41,10 +44,10 @@ function MyApp({ Component, pageProps }) {
                 />
 
                 <title>MusicBrainz - The Open Music Encyclopedia</title>
+
             </Head>
             <Component {...pageProps} />
         </>
     );
 }
-
-export default MyApp
+export default App;
