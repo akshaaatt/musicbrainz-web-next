@@ -12,32 +12,30 @@ import Projects from "../components/Home/Projects/Projects";
 
 export default function Home() {
     const DARK_MODE_KEY = 'dark_mode';
+    const [ dark, setDark ] = useState(getSetting);
+    let theme = dark ? "theme-dark" : "theme-light";
 
-    const DarkMode = {
-        getSetting: function () {
-            try {
-                return JSON.parse(window.localStorage.getItem(DARK_MODE_KEY)) === true;
-            } catch (e) { return false; }
-        },
-
-        updateSetting: function (value) {
-            try {
-                window.localStorage.setItem(DARK_MODE_KEY, JSON.stringify(value === true));
-            } catch (e) {}
+    function getSetting () {
+        try {
+            return JSON.parse(window.localStorage.getItem(DARK_MODE_KEY)) === true;
+        } catch (e) {
+            return false;
         }
-    };
+    }
 
-    const [ dark, setDark ] = useState(DarkMode.getSetting);
-    const theme = dark ? "theme-dark" : "theme-light";
+    function updateSetting (value) {
+        try {
+            window.localStorage.setItem(DARK_MODE_KEY, JSON.stringify(value === true));
+        } catch (e) {}
+    }
 
     const toggleDarkMode = useCallback(function () {
         setDark(prevState => {
             const newState = !prevState;
-            DarkMode.updateSetting(prevState);
+            updateSetting(prevState);
             return newState;
         });
-    }, [DarkMode]);
-
+    }, []);
 
     return (
         <div>
