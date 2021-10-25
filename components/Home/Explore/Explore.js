@@ -4,11 +4,11 @@ export default function Explore(props) {
             <div className="container">
 
                 <div className="section-title">
-                    <h2 data-aos="fade-in">Explore MusicBrainz</h2>
+                    <h2 data-bs-aos="fade-in">Explore MusicBrainz</h2>
                 </div>
 
                 <div className="row">
-                    <div className="col-md-6 d-flex" data-aos="fade-right">
+                    <div className="col-md-6 d-flex" data-bs-aos="fade-right">
                         <div className="card">
                             <div className="card-body">
                                 <h5 className="card-title"><a href="https://community.metabrainz.org" target="_blank" rel="noopener noreferrer">Community Driven</a></h5>
@@ -20,7 +20,7 @@ export default function Explore(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 d-flex" data-aos="fade-left">
+                    <div className="col-md-6 d-flex" data-bs-aos="fade-left">
                         <div className="card">
                             <div className="card-body">
                                 <h5 className="card-title"><a href="https://musicbrainz.org/doc/Development" target="_blank" rel="noopener noreferrer">Development</a></h5>
@@ -35,7 +35,7 @@ export default function Explore(props) {
                         </div>
 
                     </div>
-                    <div className="col-md-6 d-flex" data-aos="fade-right">
+                    <div className="col-md-6 d-flex" data-bs-aos="fade-right">
                         <div className="card">
                             <div className="card-body">
                                 <h5 className="card-title"><a href="https://musicbrainz.org/doc/General_FAQ#Why_would_I_need_to_use_MusicBrainz.3F_What.27s_wrong_with_Gracenote.27s_CDDB.3F" target="_blank" rel="noopener noreferrer">History</a></h5>
@@ -46,7 +46,7 @@ export default function Explore(props) {
                         </div>
                     </div>
 
-                    <div className="col-md-6 d-flex" data-aos="fade-left">
+                    <div className="col-md-6 d-flex" data-bs-aos="fade-left">
                         <div className="card">
                             <div className="card-body">
                                 <h5 className="card-title"><a href="https://musicbrainz.org/doc/MusicBrainz_Database" target="_blank" rel="noopener noreferrer">MusicBrainz Database</a></h5>
@@ -58,7 +58,7 @@ export default function Explore(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 d-flex" data-aos="fade-left">
+                    <div className="col-md-6 d-flex" data-bs-aos="fade-left">
                         <div className="card">
                             <div className="card-body">
                                 <h5 className="card-title"><a href="https://musicbrainz.org/doc/Editing_FAQ" target="_blank" rel="noopener noreferrer">Varied and Never Ending</a></h5>
@@ -68,7 +68,7 @@ export default function Explore(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="col-md-6 d-flex" data-aos="fade-left">
+                    <div className="col-md-6 d-flex" data-bs-aos="fade-left">
                         <div className="card">
                             <div className="card-body">
                                 <h5 className="card-title"><a href="https://musicbrainz.org/doc/How_Editing_Works" target="_blank" rel="noopener noreferrer">Editing Philosophy</a></h5>

@@ -10,18 +10,22 @@
     "export": "next export"
   },
   "dependencies": {
-    "bootstrap": "^5.0.0-beta3",
+    "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.5.0",
     "next": "11.1.2",
-    "next-images": "^1.8.1",
     "prop-types": "^15.7.2",
     "react": "17.0.2",
     "react-bootstrap": "^2.0.0",
     "react-dom": "17.0.2",
-    "react-multi-carousel": "^2.6.5"
+    "react-multi-carousel": "^2.6.5",
+    "@zxing/library": "^0.17.0",
+    "react-webcam": "^5.0.1"
   },
   "devDependencies": {
+    "@types/node": "^16.11.4",
+    "@types/react": "^17.0.31",
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "typescript": "^4.4.4"
   }
 }

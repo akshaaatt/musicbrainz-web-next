@@ -1,5 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import Carousel from "react-multi-carousel";
+import dynamic from 'next/dynamic';
+import {Modal} from "react-bootstrap";
+const BarcodeScanner = dynamic(
+    () => import('../../Utils/BarcodeScanner/BarcodeScanner'),
+    { ssr: false }
+)
 
 const responsive = {
     desktop: {
@@ -21,7 +27,15 @@ export default class Intro extends React.Component {
     state = {
         additionalTransform: 0,
         posts: [],
+        data: "Actively looking for a barcode...",
+        show: false,
     };
+    handleClose = () => {
+        this.setState({ show: false });
+    }
+    handleShow = () => {
+        this.setState({ show: true });
+    }
 
     componentDidMount() {
         fetch(`https://itunes.apple.com/us/rss/topalbums/limit=100/json`)
@@ -84,13 +98,14 @@ export default class Intro extends React.Component {
             window.open("https://musicbrainz.org/"+"search?type=" + searchType + "&query=" +query.value, "_newTab");
         }
 
+
         return (
             <section id="intro" className={"intro d-flex align-items-center "+this.props.theme}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-9 d-flex flex-column justify-content-center">
-                            <h1 data-aos="fade-up" style={{marginTop: "20px"}}>The Music Database</h1>
-                            <h2 data-aos="fade-up" data-aos-delay="400" >
+                            <h1 data-bs-aos="fade-up" style={{marginTop: "20px"}}>The Music Database</h1>
+                            <h2 data-bs-aos="fade-up" data-bs-aos-delay="400" >
                                 World&apos;s Biggest Open Source Music Database
                             </h2>
 
@@ -127,9 +142,33 @@ export default class Intro extends React.Component {
                                     <button type="button" className="btn btn-b-n" onClick={searchButtonClick}>
                                         <i className="fab fa-searchengin"/>
                                     </button>
-                                    <button type="button" className="btn btn-b-n">
+                                    <button type="button" className="btn btn-b-n" onClick={this.handleShow}>
                                         <i className="bi bi-upc-scan"/>
                                     </button>
+
+                                    <Modal show={this.state.show} onHide={this.handleClose}>
+                                        <Modal.Header closeButton>
+                                            <Modal.Title>Scan Barcode</Modal.Title>
+                                        </Modal.Header>
+                                        <Modal.Body>
+                                            <BarcodeScanner
+                                                onUpdate={(err, result) => {
+                                                    if (result)  {
+                                                        this.setState({ data: result.getText() });
+                                                        window.open("https://musicbrainz.org/search?advanced=1&type=release&query=barcode%3A" + result.getText() , "_newTab");
+                                                    }
+                                                    else {
+                                                        this.setState({ data: "Actively looking for a barcode..." });
+                                                    }
+                                                }}
+                                                height="100%"
+                                                width="100%"
+                                            />
+                                        </Modal.Body>
+                                        <Modal.Footer>
+                                            <p>{this.state.data}</p>
+                                        </Modal.Footer>
+                                    </Modal>
                                 </div>
                             </div>
                             <div className="choiceChips">

@@ -2,12 +2,12 @@ export default function Supporters(props) {
     return (
         <section id="supporters" className={"section-with-bg "+ props.theme}>
 
-            <div className="container" data-aos="fade-up">
+            <div className="container" data-bs-aos="fade-up">
                 <div className="section-header">
                     <h2>Supporters</h2>
                 </div>
 
-                <div className="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
+                <div className="row no-gutters supporters-wrap clearfix" data-bs-aos="zoom-in" data-bs-aos-delay="100">
 
                     <div className="col-lg-3 col-md-4 col-xs-6">
                         <div className="supporter-logo">

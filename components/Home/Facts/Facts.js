@@ -1,7 +1,7 @@
 export default function Facts(props) {
     return(
         <section id="counts" className={"counts "+props.theme}>
-            <div className="container" data-aos="fade-up">
+            <div className="container" data-bs-aos="fade-up">
 
                 <div className="row gy-4">
 

@@ -14,7 +14,7 @@ export default function AppDownload(props) {
                             <i className="fab fa-android"/><span>F-Droid</span>
                         </a>
                         <a href="https://picard.musicbrainz.org" target="_blank" rel="noopener noreferrer" className="btn d-inline-flex align-items-center">
-                            <i className="fa fa-laptop"/><span>Picard</span>
+                            <i className="fa fa-laptop"/><span>PC & Mac</span>
                         </a>
                     </div>
                 </div>
