@@ -1,8 +1,10 @@
 import ThemeSwitchButton from "../../Utils/ThemeSwitchButton/ThemeSwitchButton";
 import SearchOverlay from "./SearchOverlay";
+import {useRouter} from "next/router";
 
 export default function Header(props) {
   let typeCurrent = "Artist";
+  const router = useRouter()
 
   return (
       <>
