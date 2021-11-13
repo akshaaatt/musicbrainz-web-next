@@ -6,6 +6,7 @@ import '../styles/globals.css';
 import '../styles/Home.css';
 import '../styles/ThemeSwitchButton.css';
 import '../styles/FAQs.css';
+import '../styles/Profile.css';
 
 function App({ Component, pageProps }) {
     if (typeof window !== "undefined") {

@@ -225,7 +225,6 @@ export default class Intro extends React.Component {
                         </div>
                         <div className={"col-lg-3 d-none d-lg-block"}>
                             <div className="card">
-                                <img className="card-img-top" src="assets/img/blogs.svg" alt="Blogs Logo"/>
                                     <div className="card-body">
                                         <h5 className="card-title text-center"><span className=" color-purple">News</span> & <span className="color-orange">Updates</span></h5>
                                     </div>

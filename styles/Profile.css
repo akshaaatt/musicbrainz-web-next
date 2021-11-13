@@ -1,0 +1,14 @@
+.profile.profile-card.img {
+    max-width: 120px;
+}
+
+.profile.profile-card.h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #012970;
+    margin: 10px 0 0 0;
+}
+
+.profile.profile-card.h3 {
+    font-size: 18px;
+}
