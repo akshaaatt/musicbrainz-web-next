@@ -1,0 +1,9 @@
+.register {
+    margin-top: 40px;
+}
+.imz{
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+}

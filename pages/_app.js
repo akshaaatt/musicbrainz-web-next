@@ -7,6 +7,7 @@ import '../styles/Home.css';
 import '../styles/ThemeSwitchButton.css';
 import '../styles/FAQs.css';
 import '../styles/Profile.css';
+import '../styles/Account.css';
 
 function App({ Component, pageProps }) {
     if (typeof window !== "undefined") {

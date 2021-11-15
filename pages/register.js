@@ -2,9 +2,9 @@ import React, {useCallback, useState} from "react";
 import Header from "../components/Home/Header/Header";
 import Footer from "../components/Home/Footer/Footer";
 import ScrollToTop from "../components/Utils/ScrollToTop/ScrollToTop";
-import MainProfile from "../components/Profile/MainProfile";
+import Register from "../components/Account/Register";
 
-export default function ProfilePage() {
+export default function RegisterPage() {
     const DARK_MODE_KEY = 'dark_mode';
     const [ dark, setDark ] = useState(getSetting);
     let theme = dark ? "theme-dark" : "theme-light";
@@ -34,7 +34,7 @@ export default function ProfilePage() {
     return (
         <div>
             <Header theme={theme} switchActiveTheme={toggleDarkMode} isDarkThemeActive={dark}/>
-            <MainProfile/>
+            <Register/>
             <Footer theme={theme}/>
             <ScrollToTop
                 icon="bi bi-caret-up-fill"
