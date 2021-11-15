@@ -5,6 +5,10 @@ import {useRouter} from "next/router";
 export default function Header(props) {
   let typeCurrent = "Artist";
   const router = useRouter()
+  const moveToProfile = e => {
+    e.preventDefault()
+    router.push('/profile')
+  }
 
   return (
       <>
@@ -50,7 +54,7 @@ export default function Header(props) {
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Username</a>
                 <div className="dropdown-menu">
-                  <a className="dropdown-item ">Profile</a>
+                  <a className="dropdown-item " onClick={ moveToProfile }>Profile</a>
                   <a className="dropdown-item ">Applications</a>
                   <a className="dropdown-item ">Subscriptions</a>
                   <ThemeSwitchButton
@@ -145,3 +149,4 @@ const attach = e => {
   document.body.classList.add('box-collapse-open')
   document.body.classList.remove('box-collapse-closed')
 }
+
