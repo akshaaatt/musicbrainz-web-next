@@ -53,7 +53,7 @@ export default function Register(props) {
                                     <div className="col-12">
                                         <p className="small mb-0">Already have an account?
                                             <Link href="/login">
-                                            <a>Log in</a>
+                                            <a> Log in</a>
                                         </Link>
                                         </p>
                                     </div>

@@ -43,7 +43,7 @@ export default function Login(props) {
                                     <div className="col-12">
                                         <p className="small mb-0">Do not have account?
                                             <Link href="/register">
-                                            <a>Create an account</a>
+                                            <a> Create an account</a>
                                             </Link>
                                         </p>
                                     </div>
