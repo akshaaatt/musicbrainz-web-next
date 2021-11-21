@@ -1,13 +1,13 @@
-.register {
-    margin-top: 40px;
+.account{
+    margin-top: 45px;
+    width: 100%;
+    background: var(--projects-bg);
+    color: var(--color);
+    background: linear-gradient(to right, var(--intro-bg-first) 0%, var(--intro-bg-second) 100%);
 }
 .imz{
     -o-object-fit: cover;
     object-fit: cover;
     -o-object-position: center;
     object-position: center;
-}
-.accounts-bg {
-    background: var(--projects-bg);
-    color: var(--color);
 }

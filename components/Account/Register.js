@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Register(props) {
     return (
-        <section className={"section register accounts-bg min-vh-100 d-flex flex-column align-items-center justify-content-center py-4 "+props.theme}>
+        <section className={"section account min-vh-100 d-flex flex-column align-items-center justify-content-center py-4 "+props.theme}>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-5 col-md-6 d-flex flex-column align-items-center justify-content-center">
@@ -80,7 +80,6 @@ export default function Register(props) {
                                 </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
