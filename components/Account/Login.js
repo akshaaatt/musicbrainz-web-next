@@ -18,7 +18,7 @@ export default function Login(props) {
                                     <div className="col-12">
                                         <label htmlFor="yourUsername" className="form-label">Username</label>
                                         <div className="input-group has-validation">
-                                            <span className="input-group-text" id="inputGroupPrepend">@</span>
+                                            <span className="input-group-text box-bg" id="inputGroupPrepend">@</span>
                                             <input type="text" name="username" className="form-control" id="yourUsername" required/>
                                             <div className="invalid-feedback">Please enter your username.</div>
                                         </div>

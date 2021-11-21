@@ -17,7 +17,7 @@ export default function Register(props) {
                                     <div className="col-12">
                                         <label htmlFor="yourUsername" className="form-label">Username</label>
                                         <div className="input-group has-validation">
-                                            <span className="input-group-text" id="inputGroupPrepend">@</span>
+                                            <span className="input-group-text box-bg" id="inputGroupPrepend">@</span>
                                             <input type="text" name="username" className="form-control" id="yourUsername" required/>
                                                 <div className="invalid-feedback">Please choose a username.</div>
                                         </div>
@@ -42,7 +42,7 @@ export default function Register(props) {
                                         <div className="form-check">
                                             <input className="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required/>
                                                 <label className="form-check-label" htmlFor="acceptTerms">I agree and
-                                                    accept the <a href="#">terms and conditions</a></label>
+                                                    accept the <a href="#">Terms and Conditions</a></label>
                                                 <div className="invalid-feedback">You must agree before submitting.
                                                 </div>
                                         </div>

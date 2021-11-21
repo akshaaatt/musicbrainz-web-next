@@ -11,3 +11,27 @@
     -o-object-position: center;
     object-position: center;
 }
+.box-bg{
+    color: var(--color);
+    background: var(--search-bg);
+    border-color: #90A4AE;
+}
+.account input[type="text"]{
+    color: var(--color);
+    background: var(--search-bg);
+    border-color: #90A4AE;
+}
+.account input[type="email"]{
+    color: var(--color);
+    background: var(--search-bg);
+    border-color: #90A4AE;
+}
+.account input[type="password"]{
+    color: var(--color);
+    background: var(--search-bg);
+    border-color: #90A4AE;
+}
+.account .card{
+    background: var(--main-bg);
+    color: var(--color);
+}
