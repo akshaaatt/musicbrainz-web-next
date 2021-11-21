@@ -1,4 +1,4 @@
-import ThemeSwitchButton from "../../Utils/ThemeSwitchButton/ThemeSwitchButton";
+import Link from 'next/link'
 import SearchOverlay from "./SearchOverlay";
 
 export default function Header(props) {
@@ -15,7 +15,10 @@ export default function Header(props) {
             <span/>
           </button>
           <img src="assets/img/meb-mini/musicbrainz.svg" className="d-none d-lg-block" height="36" alt="image"/>
-          <a className="navbar-brand text-brand" href="/"><span className="color-purple">Music</span><span className="color-orange">Brainz</span></a>
+          <Link href="/">
+          <a className="navbar-brand text-brand"><span className="color-purple">Music</span><span className="color-orange">Brainz</span>
+          </a>
+          </Link>
 
           <div className="navbar-collapse collapse justify-content-center" id="navbarDefault">
             <ul className="navbar-nav">
@@ -48,9 +51,15 @@ export default function Header(props) {
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Username</a>
                 <div className="dropdown-menu">
-                  <a className="dropdown-item " href="/profile">Profile</a>
-                  <a className="dropdown-item " href="/register">Register</a>
-                  <a className="dropdown-item " href="/login">Login</a>
+                  <Link href="/profile">
+                  <a className="dropdown-item ">Profile</a>
+                  </Link>
+                  <Link href="/register">
+                  <a className="dropdown-item ">Register</a>
+                  </Link>
+                  <Link href="/login">
+                  <a className="dropdown-item ">Login</a>
+                  </Link>
                   <a className="dropdown-item ">Applications</a>
                   <a className="dropdown-item ">Subscriptions</a>
                   <a className="dropdown-item ">Logout</a>

@@ -1,11 +1,6 @@
-import {useRouter} from "next/router";
+import Link from 'next/link'
 
 export default function Register(props) {
-    const router = useRouter()
-    const moveToLogin = e => {
-        e.preventDefault()
-        router.push('/login')
-    }
     return (
         <section className={"section register accounts-bg min-vh-100 d-flex flex-column align-items-center justify-content-center py-4 "+props.theme}>
             <div className="container">
@@ -56,7 +51,11 @@ export default function Register(props) {
                                         <button className="btn btn-primary w-100" type="submit">Create Account</button>
                                     </div>
                                     <div className="col-12">
-                                        <p className="small mb-0">Already have an account? <a onClick={moveToLogin}>Log in</a></p>
+                                        <p className="small mb-0">Already have an account?
+                                            <Link href="/login">
+                                            <a>Log in</a>
+                                        </Link>
+                                        </p>
                                     </div>
                                 </form>
                             </div>
@@ -64,7 +63,7 @@ export default function Register(props) {
                     </div>
                     <div className="col-lg-7 col-md-6 d-flex flex-column align-items-center justify-content-center">
                         <div className="card mb-3">
-                            <img src="assets/img/register.jpg" className="card-img-top imz" alt="..." style={{height: "288px"}}/>
+                            <img src="assets/img/light-theme/register.jpg" className="card-img-top imz" alt="..." style={{height: "288px"}}/>
                                 <div className="card-body">
                                     <p className="card-text">
                                         <b>
