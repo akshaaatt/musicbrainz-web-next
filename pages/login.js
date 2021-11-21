@@ -3,30 +3,16 @@ import Header from "../components/Home/Header/Header";
 import Footer from "../components/Home/Footer/Footer";
 import ScrollToTop from "../components/Utils/ScrollToTop/ScrollToTop";
 import Login from "../components/Account/Login";
+import {themeSetting} from "../components/Utils/Common";
 
-export default function LoginPage() {
-    const DARK_MODE_KEY = 'dark_mode';
-    const [ dark, setDark ] = useState(getSetting);
+export default function LoginPage(){
+    const [ dark, setDark ] = useState(themeSetting);
     let theme = dark ? "theme-dark" : "theme-light";
-
-    function getSetting () {
-        try {
-            return JSON.parse(window.localStorage.getItem(DARK_MODE_KEY)) === true;
-        } catch (e) {
-            return false;
-        }
-    }
-
-    function updateSetting (value) {
-        try {
-            window.localStorage.setItem(DARK_MODE_KEY, JSON.stringify(value === true));
-        } catch (e) {}
-    }
 
     const toggleDarkMode = useCallback(function () {
         setDark(prevState => {
             const newState = !prevState;
-            updateSetting(prevState);
+            themeSetting(prevState);
             return newState;
         });
     }, []);

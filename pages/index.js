@@ -9,30 +9,16 @@ import About from "../components/Home/About/About";
 import Facts from "../components/Home/Facts/Facts";
 import Explore from "../components/Home/Explore/Explore";
 import Projects from "../components/Home/Projects/Projects";
+import {themeSetting} from "../components/Utils/Common";
 
 export default function Home() {
-    const DARK_MODE_KEY = 'dark_mode';
-    const [ dark, setDark ] = useState(getSetting);
+    const [ dark, setDark ] = useState(themeSetting);
     let theme = dark ? "theme-dark" : "theme-light";
-
-    function getSetting () {
-        try {
-            return JSON.parse(window.localStorage.getItem(DARK_MODE_KEY)) === true;
-        } catch (e) {
-            return false;
-        }
-    }
-
-    function updateSetting (value) {
-        try {
-            window.localStorage.setItem(DARK_MODE_KEY, JSON.stringify(value === true));
-        } catch (e) {}
-    }
 
     const toggleDarkMode = useCallback(function () {
         setDark(prevState => {
             const newState = !prevState;
-            updateSetting(prevState);
+            themeSetting(prevState);
             return newState;
         });
     }, []);

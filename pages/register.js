@@ -3,23 +3,23 @@ import Header from "../components/Home/Header/Header";
 import Footer from "../components/Home/Footer/Footer";
 import ScrollToTop from "../components/Utils/ScrollToTop/ScrollToTop";
 import Register from "../components/Account/Register";
+import {themeSetting} from "../components/Utils/Common";
 
 export default function RegisterPage() {
-    const DARK_MODE_KEY = 'dark_mode';
-    const [ dark ] = useState(getSetting);
+    const [ dark, setDark ] = useState(themeSetting);
     let theme = dark ? "theme-dark" : "theme-light";
 
-    function getSetting () {
-        try {
-            return JSON.parse(window.localStorage.getItem(DARK_MODE_KEY)) === true;
-        } catch (e) {
-            return false;
-        }
-    }
+    const toggleDarkMode = useCallback(function () {
+        setDark(prevState => {
+            const newState = !prevState;
+            themeSetting(prevState);
+            return newState;
+        });
+    }, []);
 
     return (
         <div>
-            <Header theme={theme}/>
+            <Header theme={theme} switchActiveTheme={toggleDarkMode} isDarkThemeActive={dark}/>
             <Register theme={theme}/>
             <Footer theme={theme}/>
             <ScrollToTop
