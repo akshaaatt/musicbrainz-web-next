@@ -7,3 +7,7 @@
     -o-object-position: center;
     object-position: center;
 }
+.accounts-bg {
+    background: var(--projects-bg);
+    color: var(--color);
+}

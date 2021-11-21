@@ -6,7 +6,7 @@ import Register from "../components/Account/Register";
 
 export default function RegisterPage() {
     const DARK_MODE_KEY = 'dark_mode';
-    const [ dark, setDark ] = useState(getSetting);
+    const [ dark ] = useState(getSetting);
     let theme = dark ? "theme-dark" : "theme-light";
 
     function getSetting () {
@@ -17,24 +17,10 @@ export default function RegisterPage() {
         }
     }
 
-    function updateSetting (value) {
-        try {
-            window.localStorage.setItem(DARK_MODE_KEY, JSON.stringify(value === true));
-        } catch (e) {}
-    }
-
-    const toggleDarkMode = useCallback(function () {
-        setDark(prevState => {
-            const newState = !prevState;
-            updateSetting(prevState);
-            return newState;
-        });
-    }, []);
-
     return (
         <div>
-            <Header theme={theme} switchActiveTheme={toggleDarkMode} isDarkThemeActive={dark}/>
-            <Register/>
+            <Header theme={theme}/>
+            <Register theme={theme}/>
             <Footer theme={theme}/>
             <ScrollToTop
                 icon="bi bi-caret-up-fill"

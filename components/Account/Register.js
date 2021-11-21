@@ -1,13 +1,13 @@
 import {useRouter} from "next/router";
 
-export default function Register() {
+export default function Register(props) {
     const router = useRouter()
     const moveToLogin = e => {
         e.preventDefault()
         router.push('/login')
     }
     return (
-        <section className="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+        <section className={"section register accounts-bg min-vh-100 d-flex flex-column align-items-center justify-content-center py-4 "+props.theme}>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-5 col-md-6 d-flex flex-column align-items-center justify-content-center">

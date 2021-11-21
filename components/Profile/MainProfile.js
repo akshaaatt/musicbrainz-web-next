@@ -1,6 +1,7 @@
 import React from "react";
+import ThemeSwitchButton from "../Utils/ThemeSwitchButton/ThemeSwitchButton";
 
-export default function MainProfile() {
+export default function MainProfile(props) {
     return (
         <section className="section profile">
             <div className="row">
@@ -8,7 +9,6 @@ export default function MainProfile() {
 
                     <div className="card">
                         <div className="card-body profile-card pt-4 d-flex flex-column align-items-center">
-
                             <img src="assets/img/users/akshat.jpg" alt="Profile" className="rounded-circle"/>
                                 <h2>Akshat Tiwari</h2>
                                 <h3>Junior Software Engineer</h3>
@@ -263,6 +263,18 @@ export default function MainProfile() {
                                                             Security alerts
                                                         </label>
                                                 </div>
+                                            </div>
+                                        </div>
+
+                                        <div className="row mb-3">
+                                            <label htmlFor="fullName" className="col-md-4 col-lg-3 col-form-label">
+                                                Theme
+                                            </label>
+                                            <div className="col-md-8 col-lg-9">
+                                                <ThemeSwitchButton
+                                                    dark={props.isDarkThemeActive}
+                                                    changeTheme={props.switchActiveTheme}
+                                                />
                                             </div>
                                         </div>
 

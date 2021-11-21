@@ -1,7 +1,7 @@
-export default function Login() {
+export default function Login(props) {
     return (
         <section
-            className="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+            className={"section register accounts-bg min-vh-100 d-flex flex-column align-items-center justify-content-center py-4 "+props.theme}>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">

@@ -33,8 +33,8 @@ export default function ProfilePage() {
 
     return (
         <div>
-            <Header theme={theme} switchActiveTheme={toggleDarkMode} isDarkThemeActive={dark}/>
-            <MainProfile/>
+            <Header theme={theme}/>
+            <MainProfile theme={theme} switchActiveTheme={toggleDarkMode} isDarkThemeActive={dark}/>
             <Footer theme={theme}/>
             <ScrollToTop
                 icon="bi bi-caret-up-fill"

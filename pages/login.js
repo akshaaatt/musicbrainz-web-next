@@ -34,7 +34,7 @@ export default function LoginPage() {
     return (
         <div>
             <Header theme={theme} switchActiveTheme={toggleDarkMode} isDarkThemeActive={dark}/>
-            <Login/>
+            <Login theme={theme}/>
             <Footer theme={theme}/>
             <ScrollToTop
                 icon="bi bi-caret-up-fill"
