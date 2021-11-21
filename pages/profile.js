@@ -6,13 +6,13 @@ import MainProfile from "../components/Profile/MainProfile";
 import {themeSetting} from "../components/Utils/Common";
 
 export default function ProfilePage() {
-    const [ dark, setDark ] = useState(themeSetting);
+    const [ dark, setDark ] = useState(themeSetting.setting);
     let theme = dark ? "theme-dark" : "theme-light";
 
     const toggleDarkMode = useCallback(function () {
         setDark(prevState => {
             const newState = !prevState;
-            themeSetting(prevState);
+            themeSetting.setting = prevState;
             return newState;
         });
     }, []);

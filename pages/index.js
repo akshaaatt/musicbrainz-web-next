@@ -12,13 +12,13 @@ import Projects from "../components/Home/Projects/Projects";
 import {themeSetting} from "../components/Utils/Common";
 
 export default function Home() {
-    const [ dark, setDark ] = useState(themeSetting);
+    const [ dark, setDark ] = useState(themeSetting.setting);
     let theme = dark ? "theme-dark" : "theme-light";
 
     const toggleDarkMode = useCallback(function () {
         setDark(prevState => {
             const newState = !prevState;
-            themeSetting(prevState);
+            themeSetting.setting = prevState;
             return newState;
         });
     }, []);
