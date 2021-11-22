@@ -19,23 +19,10 @@ Installation
 
 Full installation instructions are available in [INSTALL.md](DEVELOPING.md).
 
-General Prerequisites:
-
-* Ubuntu/Debian
-* Node (at least version 16)
-* Perl (at least version 5.30)
-* PostgreSQL (at least version 12)
-
 Reporting bugs
 --------------
 
 Please report issues on our [bug tracker](http://tickets.metabrainz.org/).
-
-Contributing
-------------
-
-Please submit all patches to [GitHub](https://github.com/metabrainz/musicbrainz-server/pulls) for review.
-See the [contributing guidelines](CONTRIBUTING.md).
 
 License
 -------
