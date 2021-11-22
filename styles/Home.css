@@ -230,14 +230,21 @@
     top: 0;
     bottom: 0;
     right: 0;
+    padding-bottom: 20px;
     width: 100%;
     z-index: 1040;
+    overflow-y: scroll;
     background: var(--main-bg);
     color: var(--color);
     transform: translateX(100%);
     transition: all 0.1s ease;
 }
-
+.label-upgrade {
+    display: block;
+    min-height: 100%; /* for the latest browsers which support min-height */
+    height: auto !important; /* for newer IE versions */
+    height: 100%; /* the only height-related attribute that IE6 does not ignore  */
+}
 @media (min-width: 768px) {
     .box-collapse {
         width: 50%;
@@ -265,9 +272,8 @@
 }
 
 .box-collapse-wrap {
-    position: absolute;
     left: 0;
-    top: 6.5rem;
+    top: 1rem;
     bottom: 5rem;
     padding-left: 10%;
     padding-right: 10%;

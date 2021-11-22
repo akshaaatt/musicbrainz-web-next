@@ -49,10 +49,12 @@ const SearchOverlay = props => {
     }
     return(
         <div className={"box-collapse " + props.theme}>
+            <span className="close-box-collapse right-boxed bi bi-x" onClick={remove}/>
+
+            <div className="row">
             <div className="title-box-d">
                 <h3 className="title-d">Advanced Search</h3>
             </div>
-            <span className="close-box-collapse right-boxed bi bi-x" onClick={remove}/>
             <div className="box-collapse-wrap form">
                 <form className="form-a" onSubmit={handleSubmit}>
                     <div className="row">
@@ -112,7 +114,46 @@ const SearchOverlay = props => {
                     </div>
                 </form>
             </div>
+            </div>
 
+            <div className="row">
+            <div className="title-box-d">
+                <h3 className="title-d">Tag Lookup</h3>
+            </div>
+            <div className="box-collapse-wrap form">
+                <form className="form-a" onSubmit={handleSubmit}>
+                    <div className="row">
+                        <div className="col-md-12 mb-2">
+                            <label className="pb-2" htmlFor="Type">Artist</label>
+                            <input className="form-control form-control-lg form-control-a"/>
+                        </div>
+                        <div className="col-md-12 mb-2">
+                            <label className="pb-2" htmlFor="Type">Release</label>
+                            <input className="form-control form-control-lg form-control-a"/>
+                        </div>
+                        <div className="col-md-12 mb-2">
+                            <label className="pb-2" htmlFor="Type">Track Number</label>
+                            <input className="form-control form-control-lg form-control-a"/>
+                        </div>
+                        <div className="col-md-12 mb-2">
+                            <label className="pb-2" htmlFor="Type">Track</label>
+                            <input className="form-control form-control-lg form-control-a"/>
+                        </div>
+                        <div className="col-md-12 mb-2">
+                            <label className="pb-2" htmlFor="Type">Duration</label>
+                            <input className="form-control form-control-lg form-control-a"/>
+                        </div>
+                        <div className="col-md-12 mb-2">
+                            <label className="pb-2" htmlFor="Type">Filename</label>
+                            <input className="form-control form-control-lg form-control-a"/>
+                        </div>
+                        <div className="d-grid col-md-12">
+                            <button type="submit" className="btn btn-b">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </div>
         </div>
     )
 }
