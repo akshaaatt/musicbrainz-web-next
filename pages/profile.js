@@ -7,7 +7,7 @@ import {themeSetting} from "../components/Utils/Common";
 
 export default function ProfilePage() {
     const [ dark, setDark ] = useState(themeSetting.setting);
-    let theme = dark ? "theme-light" : "theme-dark";
+    let theme = dark ? "theme-dark" : "theme-light";
 
     const toggleDarkMode = useCallback(function () {
         setDark(prevState => {
