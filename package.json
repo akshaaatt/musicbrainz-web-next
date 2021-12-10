@@ -9,7 +9,6 @@
     "lint": "next lint",
     "export": "next export",
     "prod": "npm run build && npm run export",
-    "deploy": "firebase deploy"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
