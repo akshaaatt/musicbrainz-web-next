@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import SearchOverlay from "./SearchOverlay";
+import Image from 'next/image';
 
 export default function Header(props) {
   let typeCurrent = "Artist";
@@ -14,7 +15,7 @@ export default function Header(props) {
             <span/>
             <span/>
           </button>
-          <img src="assets/img/meb-mini/musicbrainz.svg" className="d-none d-lg-block" height="36" alt="image"/>
+          <Image src="assets/img/meb-mini/musicbrainz.svg" className="d-none d-lg-block" height="36" alt="image"/>
           <Link href="/">
           <a className="navbar-brand text-brand"><span className="color-purple">Music</span><span className="color-orange">Brainz</span>
           </a>

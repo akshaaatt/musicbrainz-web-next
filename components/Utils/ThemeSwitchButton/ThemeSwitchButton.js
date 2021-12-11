@@ -1,4 +1,5 @@
 import React from "react";
+import Image from 'next/image';
 
 function ThemeSwitchButton(props) {
     let active, buttonClassName;
@@ -16,13 +17,13 @@ function ThemeSwitchButton(props) {
     return (
         <div className="DarkThemeSwitchBtn-wrapper">
             <picture className="ThemeIndicator-Icon">
-                <img src={activeDayIcon} alt="icon for lite theme" />
+                <Image src={activeDayIcon} alt="icon for lite theme" />
             </picture>
             <div className="SwitchBtn-Track" onClick={props.changeTheme}>
                 <button className={buttonClassName}/>
             </div>
             <picture className="ThemeIndicator-Icon">
-                <img src={activeNightIcon} alt="icon for dark theme" />
+                <Image src={activeNightIcon} alt="icon for dark theme" />
             </picture>
         </div>
     );

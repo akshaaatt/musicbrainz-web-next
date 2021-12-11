@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Projects(props) {
     return(
         <section id="features" className={"section-bg "+props.theme}>
@@ -13,7 +15,7 @@ export default function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 adjust-size" data-bs-aos="fade-right">
-                        <a href="https://listenbrainz.org" target="_blank" rel="noopener noreferrer"><img src="assets/img/meb-logos/listenbrainz.svg" style={{height: "120px"}} className="img-fluid" alt=""/></a>
+                        <a href="https://listenbrainz.org" target="_blank" rel="noopener noreferrer"><Image src="assets/img/meb-logos/listenbrainz.svg" style={{height: "120px"}} className="img-fluid" alt=""/></a>
                     </div>
                     <div className="col-md-7 pt-4" data-bs-aos="fade-left">
                         <h3>An open record of user listening habits</h3>
@@ -30,7 +32,7 @@ export default function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 order-1 order-md-2 adjust-size" data-bs-aos="fade-left">
-                        <a href="https://picard.musicbrainz.org" target="_blank" rel="noopener noreferrer"><img src="assets/img/meb-logos/picard.svg" style={{height: "120px"}} className="img-fluid" alt=""/></a>
+                        <a href="https://picard.musicbrainz.org" target="_blank" rel="noopener noreferrer"><Image src="assets/img/meb-logos/picard.svg" style={{height: "120px"}} className="img-fluid" alt=""/></a>
                     </div>
                     <div className="col-md-7 pt-5 order-2 order-md-1" data-bs-aos="fade-right">
                         <h3>A cross-platform music tagger</h3>
@@ -46,7 +48,7 @@ export default function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 adjust-size" data-bs-aos="fade-right">
-                        <a href="https://acousticbrainz.org" target="_blank" rel="noopener noreferrer"><img src="assets/img/meb-logos/acousticbrainz.svg" style={{height: "120px"}} className="img-fluid adjust-size" alt=""/></a>
+                        <a href="https://acousticbrainz.org" target="_blank" rel="noopener noreferrer"><Image src="assets/img/meb-logos/acousticbrainz.svg" style={{height: "120px"}} className="img-fluid adjust-size" alt=""/></a>
                     </div>
                     <div className="col-md-7 pt-5" data-bs-aos="fade-left">
                         <h3>A crowdsourced collection of acoustic information</h3>
@@ -61,7 +63,7 @@ export default function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 order-1 order-md-2 adjust-size" data-bs-aos="fade-left">
-                        <a href="https://coverartarchive.org" target="_blank" rel="noopener noreferrer"><img src="assets/img/meb-logos/coverartarchive.svg" style={{height: "120px"}} className="img-fluid adjust-size" alt=""/></a>
+                        <a href="https://coverartarchive.org" target="_blank" rel="noopener noreferrer"><Image src="assets/img/meb-logos/coverartarchive.svg" style={{height: "120px"}} className="img-fluid adjust-size" alt=""/></a>
                     </div>
                     <div className="col-md-7 pt-5 order-2 order-md-1" data-bs-aos="fade-right">
                         <h3>A repository of music cover art that is freely and easily accessible</h3>
@@ -78,7 +80,7 @@ export default function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 adjust-size" data-bs-aos="fade-right">
-                        <a href="https://critiquebrainz.org" target="_blank" rel="noopener noreferrer"><img src="assets/img/meb-logos/critiquebrainz.svg" style={{height: "120px"}} className="img-fluid adjust-size" alt=""/></a>
+                        <a href="https://critiquebrainz.org" target="_blank" rel="noopener noreferrer"><Image src="assets/img/meb-logos/critiquebrainz.svg" style={{height: "120px"}} className="img-fluid adjust-size" alt=""/></a>
                     </div>
                     <div className="col-md-7 pt-5" data-bs-aos="fade-left">
                         <h3>A repository for Creative Commons licensed music reviews</h3>
@@ -93,7 +95,7 @@ export default function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 order-1 order-md-2 adjust-size" data-bs-aos="fade-left">
-                        <a href="https://bookbrainz.org" target="_blank" rel="noopener noreferrer"><img src="assets/img/meb-logos/bookbrainz.svg" style={{height: "120px"}} className="img-fluid adjust-size" alt=""/></a>
+                        <a href="https://bookbrainz.org" target="_blank" rel="noopener noreferrer"><Image src="assets/img/meb-logos/bookbrainz.svg" style={{height: "120px"}} className="img-fluid adjust-size" alt=""/></a>
                     </div>
                     <div className="col-md-7 pt-5 order-2 order-md-1" data-bs-aos="fade-right">
                         <h3>An open encyclopedia which contains information about published literature</h3>

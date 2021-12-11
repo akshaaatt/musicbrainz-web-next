@@ -2,6 +2,8 @@ import React, {useState} from "react";
 import Carousel from "react-multi-carousel";
 import dynamic from 'next/dynamic';
 import {Modal} from "react-bootstrap";
+import Image from 'next/image';
+
 const BarcodeScanner = dynamic(
     () => import('../../Utils/BarcodeScanner/BarcodeScanner'),
     { ssr: false }
@@ -212,13 +214,13 @@ export default class Intro extends React.Component {
                                             return (
 
                                                 <div className="card text-left mt-5" key={indx}>
-                                                    <img style={{width: '100%', height: '250px', objectFit: 'cover'}}
+                                                    <Image style={{width: '100%', height: '250px', objectFit: 'cover'}}
                                                          src={artwork["im:image"][2].label} alt="Alt text"/>
                                                 </div>
 
                                             )
                                         }) :  <div className="card text-left mt-5" key="1">
-                                            <img style={{width: '100%', height: '250px', objectFit: 'cover'}}
+                                            <Image style={{width: '100%', height: '250px', objectFit: 'cover'}}
                                                  src="assets/img/demo.jpg" alt="Alt text"/>
                                         </div>
                                     }
@@ -226,7 +228,7 @@ export default class Intro extends React.Component {
                             </div>
                             <div className={"col-lg-3 d-none d-lg-block"}>
                                 <div className="card">
-                                    <img className="card-img-top" src="assets/img/blogs.svg" alt="Blogs Logo"/>
+                                    <Image className="card-img-top" src="assets/img/blogs.svg" alt="Blogs Logo"/>
                                     <div className="card-body">
                                         <h5 className="card-title text-center"><span className=" color-purple">News</span> & <span className="color-orange">Updates</span></h5>
                                     </div>

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Register(props) {
     return (
@@ -63,7 +64,7 @@ export default function Register(props) {
                     </div>
                     <div className="col-lg-7 col-md-6 d-flex flex-column align-items-center justify-content-center">
                         <div className="card mb-3">
-                            <img src="assets/img/meb-icons/all_projects.jpg" className="card-img-top imz" alt="..." style={{height: "288px"}}/>
+                            <Image src="assets/img/meb-icons/all_projects.jpg" className="card-img-top imz" alt="..." style={{height: "288px"}}/>
                             <div className="card-body">
                                 <p className="card-text">
                                     <b>

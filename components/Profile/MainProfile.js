@@ -1,5 +1,6 @@
 import React from "react";
 import ThemeSwitchButton from "../Utils/ThemeSwitchButton/ThemeSwitchButton";
+import Image from 'next/image';
 
 export default function MainProfile(props) {
     return (
@@ -9,7 +10,7 @@ export default function MainProfile(props) {
 
                     <div className="card">
                         <div className="card-body profile-card pt-4 d-flex flex-column align-items-center">
-                            <img src="assets/img/users/akshat.jpg" alt="Profile" className="rounded-circle"/>
+                            <Image src="assets/img/users/akshat.jpg" alt="Profile" className="rounded-circle"/>
                                 <h2>Akshat Tiwari</h2>
                                 <h3>Junior Software Engineer</h3>
                                 <div className="social-links mt-2">
@@ -108,7 +109,7 @@ export default function MainProfile(props) {
                                                 Profile Image
                                             </label>
                                             <div className="col-md-8 col-lg-9">
-                                                <img src="assets/img/users/akshat.jpg" alt="Profile"/>
+                                                <Image src="assets/img/users/akshat.jpg" alt="Profile"/>
                                                     <div className="pt-2">
                                                         <a href="#" className="btn btn-primary btn-sm" title="Upload new profile image">
                                                             <i className="bi bi-upload"/></a>
