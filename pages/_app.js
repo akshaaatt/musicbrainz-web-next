@@ -9,7 +9,7 @@ import '../styles/FAQs.css';
 import '../styles/Profile.css';
 import '../styles/Account.css';
 
-function App({ Component, pageProps }) {
+export default function App({ Component, pageProps }) {
     if (typeof window !== "undefined") {
         require("bootstrap/dist/js/bootstrap");
     }
@@ -52,4 +52,3 @@ function App({ Component, pageProps }) {
         </>
     );
 }
-export default App;

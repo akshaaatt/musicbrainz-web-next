@@ -8,6 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "fire": "next build && next start",
     "export": "next export",
     "prod": "npm run build && npm run export"
   },
