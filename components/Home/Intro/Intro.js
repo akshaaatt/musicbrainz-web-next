@@ -221,14 +221,14 @@ export default class Intro extends React.Component {
                                             )
                                         }) :  <div className="card text-left mt-5" key="1">
                                             <Image style={{width: '100%', height: '250px', objectFit: 'cover'}}
-                                                 src="assets/img/demo.jpg" alt="Alt text"/>
+                                                 src="/assets/img/demo.jpg" alt="Alt text"/>
                                         </div>
                                     }
                                 </Carousel>
                             </div>
                             <div className={"col-lg-3 d-none d-lg-block"}>
                                 <div className="card">
-                                    <Image className="card-img-top" src="assets/img/blogs.svg" alt="Blogs Logo"/>
+                                    <Image className="card-img-top" src="/assets/img/blogs.svg" alt="Blogs Logo"/>
                                     <div className="card-body">
                                         <h5 className="card-title text-center"><span className=" color-purple">News</span> & <span className="color-orange">Updates</span></h5>
                                     </div>

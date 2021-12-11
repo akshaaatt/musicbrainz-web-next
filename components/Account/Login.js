@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import loginImage from 'assets/img/meb-icons/all_projects.jpg'
 
 export default function Login(props) {
     return (
@@ -10,7 +9,7 @@ export default function Login(props) {
                 <div className="row justify-content-center">
                     <div className="col-lg-6 col-md-6 d-flex flex-column align-items-center justify-content-center">
                         <div className="card mb-3">
-                            <Image src={loginImage} className="card-img-top imz" alt="..." style={{height: "200px"}}/>
+                            <Image src="/assets/img/meb-icons/all_projects.jpg" className="card-img-top imz" alt="..." style={{height: "200px"}}/>
                             <div className="card-body">
                                 <div className="pt-4 pb-2">
                                     <h5 className="card-title text-center pb-0 fs-4">Login to Your Account</h5>

@@ -2,6 +2,7 @@
   "name": "musicbrainz-web-next",
   "version": "1.0.0",
   "private": false,
+  "license": "GPL-3.0-or-later",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,6 +12,7 @@
     "prod": "npm run build && npm run export"
   },
   "dependencies": {
+    "@zxing/library": "^0.17.0",
     "bootstrap": "^5.1.3",
     "bootstrap-icons": "^1.5.0",
     "next": "11.1.2",
@@ -19,8 +21,8 @@
     "react-bootstrap": "^2.0.0",
     "react-dom": "17.0.2",
     "react-multi-carousel": "^2.6.5",
-    "@zxing/library": "^0.17.0",
-    "react-webcam": "^5.0.1"
+    "react-webcam": "^5.0.1",
+    "sharp": "^0.29.3"
   },
   "devDependencies": {
     "@types/node": "^16.11.4",

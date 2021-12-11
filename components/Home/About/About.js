@@ -7,7 +7,7 @@ export default function About(props) {
 
                 <div className="row">
                     <div className="col-lg-6 order-1 order-lg-2" data-bs-aos="zoom-in" data-bs-aos-delay="150">
-                        <Image src="assets/img/music.jpg" className="img-fluid" alt=""/>
+                        <Image src="/assets/img/music.jpg" className="img-fluid" alt=""/>
                     </div>
                     <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-bs-aos="fade-right">
                         <h3 className="navbar-brand text-brand">About <span className="color-purple">Music</span><span
