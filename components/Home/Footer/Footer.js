@@ -107,7 +107,7 @@ const Footer = props => {
             </div>
             <div className="col-md-6">
               <p className="section-line">
-                Brought to you by <Image src="/assets/img/meb-icons/MetaBrainz.svg" width="30" height="30" alt="image"/> <span className="color-a"> MetaBrainz Foundation </span>
+                Brought to you by <Image src="/assets/img/meb-icons/MetaBrainz.svg" width="24" height="24" alt="image"/> <span className="color-a"> MetaBrainz Foundation </span>
               </p>
             </div>
             <div className="col-md-3 d-none d-md-block">
