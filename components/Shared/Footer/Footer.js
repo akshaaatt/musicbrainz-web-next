@@ -6,7 +6,7 @@ const Footer = props => {
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-4">
-              <h3 className="navbar-brand text-brand"><Image src="/assets/img/meb-icons/MusicBrainz.svg" width="52" alt="image"/> <span className="color-purple">Music</span><span
+              <h3 className="navbar-brand text-brand"><Image src="/assets/img/meb-icons/MusicBrainz.svg" width="52" height="52" alt="image"/> <span className="color-purple">Music</span><span
                   className="color-orange">Brainz</span></h3>
               <br/>
               <p className="color-gray">

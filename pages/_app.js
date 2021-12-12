@@ -18,14 +18,14 @@ export default function App({ Component, pageProps }) {
             <Head>
                 <meta charSet="utf-8"/>
 
-                <link rel="icon" href="%PUBLIC_URL%/assets/favicons/favicon.ico"/>
-                <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/assets/favicons/apple-touch-icon.png"/>
+                <link rel="icon" href="/assets/favicons/favicon.ico"/>
+                <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png"/>
                 <link rel="icon" type="image/png" sizes="32x32"
-                      href="%PUBLIC_URL%/assets/favicons/favicon-32x32.png"/>
+                      href="/assets/favicons/favicon-32x32.png"/>
                 <link rel="icon" type="image/png" sizes="16x16"
-                      href="%PUBLIC_URL%/assets/favicons/favicon-16x16.png"/>
-                <link rel="manifest" href="%PUBLIC_URL%/assets/favicons/site.webmanifest"/>
-                <link rel="mask-icon" href="%PUBLIC_URL%/assets/favicons/safari-pinned-tab.svg"
+                      href="/assets/favicons/favicon-16x16.png"/>
+                <link rel="manifest" href="/assets/favicons/site.webmanifest"/>
+                <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg"
                       color="#5bbad5"/>
                 <link rel="stylesheet"
                       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"

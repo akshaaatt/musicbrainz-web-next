@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React from "react";
 import Carousel from "react-multi-carousel";
 import dynamic from 'next/dynamic';
 import {Modal} from "react-bootstrap";
@@ -210,25 +210,23 @@ export default class Intro extends React.Component {
                                     }}
                                 >
                                     {
-                                        this.state.posts ? this.state.posts.map((artwork, indx) => {
+                                        this.state.posts ? this.state.posts.map((artwork, index) => {
+                                            console.log(artwork["im:image"][2].label);
                                             return (
-
-                                                <div className="card text-left mt-5" key={indx}>
-                                                    <Image style={{width: '100%', height: '250px', objectFit: 'cover'}}
-                                                         src={artwork["im:image"][2].label} alt="Alt text"/>
+                                                <div className="card text-left mt-5" key={index}>
+                                                    <Image width="256" height="256" src={artwork["im:image"][2].label} alt="Cover Art"/>
                                                 </div>
-
                                             )
-                                        }) :  <div className="card text-left mt-5" key="1">
-                                            <Image style={{width: '100%', height: '250px', objectFit: 'cover'}}
-                                                 src="/assets/img/demo.jpg" alt="Alt text"/>
-                                        </div>
+                                        }) :
+                                            <div className="card text-left mt-5" key="1">
+                                                <Image width="256" height="256" src="/assets/img/demo.jpg" alt="Cover Art"/>
+                                            </div>
                                     }
                                 </Carousel>
                             </div>
                             <div className={"col-lg-3 d-none d-lg-block"}>
                                 <div className="card">
-                                    <Image className="card-img-top" src="/assets/img/blogs.svg" alt="Blogs Logo"/>
+                                    <Image className="card-img-top" src="/assets/img/blogs.svg" width="128" height="48" alt="Blogs Logo"/>
                                     <div className="card-body">
                                         <h5 className="card-title text-center"><span className=" color-purple">News</span> & <span className="color-orange">Updates</span></h5>
                                     </div>

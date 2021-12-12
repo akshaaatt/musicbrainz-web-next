@@ -1,6 +1,6 @@
 import React, {useCallback, useState} from "react";
-import Header from '../components/Home/Header/Header';
-import Footer from '../components/Home/Footer/Footer';
+import Header from '../components/Shared/Header/Header';
+import Footer from '../components/Shared/Footer/Footer';
 import ScrollToTop from "../components/Utils/ScrollToTop/ScrollToTop";
 import Supporters from "../components/Home/Supporters/Supporters";
 import Intro from "../components/Home/Intro/Intro";

@@ -1,5 +1,12 @@
-const SearchOverlay = props => {
+export default function SearchOverlay(props)  {
     let typeCurrent;
+
+    const remove = e => {
+        e.preventDefault()
+        document.body.classList.remove('box-collapse-open')
+        document.body.classList.add('box-collapse-closed')
+    }
+
     const handleSubmit = (event) => {
         event.preventDefault();
         const query = document.getElementById('searchInput');
@@ -47,6 +54,7 @@ const SearchOverlay = props => {
             "&method=" + methodUsed, "_newTab");
         return false;
     }
+
     return(
         <div className={"box-collapse " + props.theme}>
             <span className="close-box-collapse right-boxed bi bi-x" onClick={remove}/>
@@ -158,10 +166,3 @@ const SearchOverlay = props => {
     )
 }
 
-const remove = e => {
-    e.preventDefault()
-    document.body.classList.remove('box-collapse-open')
-    document.body.classList.add('box-collapse-closed')
-}
-
-export default SearchOverlay;
