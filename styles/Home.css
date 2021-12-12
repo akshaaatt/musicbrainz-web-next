@@ -354,6 +354,11 @@
     color: var(--color);
 }
 
+.slider-image-item{
+    height: 256px;
+    width: 256px;
+}
+
 .chip {
     padding: 0 12px;
     background-color: var(--gray-light);
