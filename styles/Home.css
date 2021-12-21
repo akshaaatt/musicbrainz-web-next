@@ -629,10 +629,6 @@ section {
 .features .content p:last-child {
     margin-bottom: 0;
 }
-.adjust-size{
-    height: 100px;
-    text-align: center;
-}
 
 /* Explore */
 section {

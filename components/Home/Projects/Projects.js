@@ -15,12 +15,23 @@ export default function Projects(props) {
 
                 <div className="row content align-items-center justify-content-center">
                     <div className="col-md-5 adjust-size" data-bs-aos="fade-right">
-                        <a href="https://listenbrainz.org" target="_blank" rel="noopener noreferrer"><Image src="/assets/img/meb-logos/listenbrainz.svg" layout="fill" width="360" height="100" className="img-fluid" alt="ListenBrainz"/></a>
+                        <a href="https://listenbrainz.org"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <Image src="/assets/img/meb-logos/listenbrainz.svg"
+                                   width="360"
+                                   height="360"
+                                   alt="ListenBrainz"/>
+                        </a>
                     </div>
                     <div className="col-md-7 pt-4" data-bs-aos="fade-left">
                         <h3>An open record of user listening habits</h3>
                         <p className="fst-italic">
-                            <a href="https://listenbrainz.org" target="_blank" rel="noopener noreferrer">Checkout</a>
+                            <a href="https://listenbrainz.org"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Checkout
+                            </a>
                         </p>
                         <p>
                             ListenBrainz keeps tracks of what music you listen to and provides you with insights into your listening habits. We&apos;re completely open-source and publish our data as open data.
@@ -32,12 +43,22 @@ export default function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 order-1 order-md-2 adjust-size" data-bs-aos="fade-left">
-                        <a href="https://picard.musicbrainz.org" target="_blank" rel="noopener noreferrer"><Image src="/assets/img/meb-logos/picard.svg" width="360" height="360" className="img-fluid" alt="Picard"/></a>
+                        <a href="https://picard.musicbrainz.org" target="_blank"
+                           rel="noopener noreferrer">
+                            <Image src="/assets/img/meb-logos/picard.svg"
+                                   width="360"
+                                   height="360"
+                                   alt="Picard"/>
+                        </a>
                     </div>
                     <div className="col-md-7 pt-5 order-2 order-md-1" data-bs-aos="fade-right">
                         <h3>A cross-platform music tagger</h3>
                         <p className="fst-italic">
-                            <a href="https://picard.musicbrainz.org" target="_blank" rel="noopener noreferrer">Checkout</a>
+                            <a href="https://picard.musicbrainz.org"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Checkout
+                            </a>
                         </p>
                         <p>
                             Picard can add metadata tags to your music files, based on information available from the MusicBrainz website.
@@ -48,12 +69,23 @@ export default function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 adjust-size" data-bs-aos="fade-right">
-                        <a href="https://acousticbrainz.org" target="_blank" rel="noopener noreferrer"><Image src="/assets/img/meb-logos/acousticbrainz.svg" width="360" height="360" className="img-fluid adjust-size" alt="AcousticBrainz"/></a>
+                        <a href="https://acousticbrainz.org"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <Image src="/assets/img/meb-logos/acousticbrainz.svg"
+                                   width="360"
+                                   height="360"
+                                   alt="AcousticBrainz"/>
+                        </a>
                     </div>
                     <div className="col-md-7 pt-5" data-bs-aos="fade-left">
                         <h3>A crowdsourced collection of acoustic information</h3>
                         <p className="fst-italic">
-                            <a href="https://acousticbrainz.org" target="_blank" rel="noopener noreferrer">Checkout</a>
+                            <a href="https://acousticbrainz.org"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Checkout
+                            </a>
                         </p>
                         <p>
                             The AcousticBrainz project aims to crowd source acoustic information for all music in the world and to make it available to the public. This acoustic information describes the acoustic characteristics of music and includes low-level spectral information and information for genres, moods, keys, scales and much more.
@@ -63,12 +95,21 @@ export default function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 order-1 order-md-2 adjust-size" data-bs-aos="fade-left">
-                        <a href="https://coverartarchive.org" target="_blank" rel="noopener noreferrer"><Image src="/assets/img/meb-logos/coverartarchive.svg" width="360" height="360" className="img-fluid adjust-size" alt="Cover Art Archive"/></a>
+                        <a href="https://coverartarchive.org"
+                           target="_blank" rel="noopener noreferrer">
+                            <Image src="/assets/img/meb-logos/coverartarchive.svg"
+                                   width="360"
+                                   height="360"
+                                   alt="Cover Art Archive"/></a>
                     </div>
                     <div className="col-md-7 pt-5 order-2 order-md-1" data-bs-aos="fade-right">
                         <h3>A repository of music cover art that is freely and easily accessible</h3>
                         <p className="fst-italic">
-                            <a href="https://coverartarchive.org" target="_blank" rel="noopener noreferrer">Checkout</a>
+                            <a href="https://coverartarchive.org"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Checkout
+                            </a>
                         </p>
                         <p>
                             The Cover Art Archive is a joint project between the Internet Archive and MusicBrainz, whose goal is to make cover art images available to everyone on the Internet in an organised and convenient way.
@@ -80,12 +121,23 @@ export default function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 adjust-size" data-bs-aos="fade-right">
-                        <a href="https://critiquebrainz.org" target="_blank" rel="noopener noreferrer"><Image src="/assets/img/meb-logos/critiquebrainz.svg" width="360" height="360" className="img-fluid adjust-size" alt="CritiqueBrainz"/></a>
+                        <a href="https://critiquebrainz.org"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <Image src="/assets/img/meb-logos/critiquebrainz.svg"
+                                   width="360"
+                                   height="360"
+                                   alt="CritiqueBrainz"/>
+                        </a>
                     </div>
                     <div className="col-md-7 pt-5" data-bs-aos="fade-left">
                         <h3>A repository for Creative Commons licensed music reviews</h3>
                         <p className="fst-italic">
-                            <a href="https://critiquebrainz.org" target="_blank" rel="noopener noreferrer">Checkout</a>
+                            <a href="https://critiquebrainz.org"
+                               target="_blank"
+                               rel="noopener noreferrer">
+                                Checkout
+                            </a>
                         </p>
                         <p>
                             CritiqueBrainz is a repository for Creative Commons licensed music reviews. Here you can read what other people have written about an album or event and write your own review!
@@ -95,7 +147,14 @@ export default function Projects(props) {
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 order-1 order-md-2 adjust-size" data-bs-aos="fade-left">
-                        <a href="https://bookbrainz.org" target="_blank" rel="noopener noreferrer"><Image src="/assets/img/meb-logos/bookbrainz.svg" width="360" height="360" className="img-fluid adjust-size" alt="BookBrainz"/></a>
+                        <a href="https://bookbrainz.org"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <Image src="/assets/img/meb-logos/bookbrainz.svg"
+                                   width="360"
+                                   height="360"
+                                   alt="BookBrainz"/>
+                        </a>
                     </div>
                     <div className="col-md-7 pt-5 order-2 order-md-1" data-bs-aos="fade-right">
                         <h3>An open encyclopedia which contains information about published literature</h3>
