@@ -15,7 +15,14 @@ export default function Header(props) {
             <span/>
             <span/>
           </button>
-          <Image src="/assets/img/meb-mini/musicbrainz.svg" className="d-none d-lg-block" height="36" width="36" alt="image"/>
+          <div className='image-container'>
+              <Image
+                src="/assets/img/meb-mini/musicbrainz.svg"
+                className="d-none d-lg-block image"
+                alt="image"
+                layout='fill'
+                />
+          </div>
           <Link href="/">
           <a className="navbar-brand text-brand"><span className="color-purple">Music</span><span className="color-orange">Brainz</span>
           </a>
