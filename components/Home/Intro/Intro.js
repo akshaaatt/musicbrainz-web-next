@@ -214,7 +214,7 @@ export default class Intro extends React.Component {
                                             console.log(artwork["im:image"][2].label);
                                             return (
                                                 <div className="card text-left mt-5" key={index}>
-                                                    <Image width="256" height="256" src={artwork["im:image"][2].label} alt="Cover Art"/>
+                                                    <Image width="275" height="250" src={artwork["im:image"][2].label} alt="Cover Art"/>
                                                 </div>
                                             )
                                         }) :

@@ -18,10 +18,11 @@ export default function Projects(props) {
                         <a href="https://listenbrainz.org"
                            target="_blank"
                            rel="noopener noreferrer">
-                            <Image src="/assets/img/meb-logos/listenbrainz.svg"
-                                   width="360"
-                                   height="360"
+                           <div className='image-container'>
+                                <Image className='image' src="/assets/img/meb-logos/listenbrainz.svg"
+                                   layout="fill"
                                    alt="ListenBrainz"/>
+                            </div>
                         </a>
                     </div>
                     <div className="col-md-7 pt-4" data-bs-aos="fade-left">
@@ -45,10 +46,11 @@ export default function Projects(props) {
                     <div className="col-md-5 order-1 order-md-2 adjust-size" data-bs-aos="fade-left">
                         <a href="https://picard.musicbrainz.org" target="_blank"
                            rel="noopener noreferrer">
-                            <Image src="/assets/img/meb-logos/picard.svg"
-                                   width="360"
-                                   height="360"
+                           <div className='image-container'>
+                                <Image className='image' src="/assets/img/meb-logos/picard.svg"
+                                   layout='fill'
                                    alt="Picard"/>
+                            </div>
                         </a>
                     </div>
                     <div className="col-md-7 pt-5 order-2 order-md-1" data-bs-aos="fade-right">
@@ -72,10 +74,11 @@ export default function Projects(props) {
                         <a href="https://acousticbrainz.org"
                            target="_blank"
                            rel="noopener noreferrer">
-                            <Image src="/assets/img/meb-logos/acousticbrainz.svg"
-                                   width="360"
-                                   height="360"
+                            <div className='image-container'>
+                                <Image className='image' src="/assets/img/meb-logos/acousticbrainz.svg"
+                                   layout='fill'
                                    alt="AcousticBrainz"/>
+                            </div>
                         </a>
                     </div>
                     <div className="col-md-7 pt-5" data-bs-aos="fade-left">
@@ -97,10 +100,12 @@ export default function Projects(props) {
                     <div className="col-md-5 order-1 order-md-2 adjust-size" data-bs-aos="fade-left">
                         <a href="https://coverartarchive.org"
                            target="_blank" rel="noopener noreferrer">
-                            <Image src="/assets/img/meb-logos/coverartarchive.svg"
-                                   width="360"
-                                   height="360"
-                                   alt="Cover Art Archive"/></a>
+                            <div className='image-container'>
+                                <Image className='image' src="/assets/img/meb-logos/coverartarchive.svg"
+                                   layout='fill'
+                                   alt="Cover Art Archive"/>
+                            </div>
+                        </a>
                     </div>
                     <div className="col-md-7 pt-5 order-2 order-md-1" data-bs-aos="fade-right">
                         <h3>A repository of music cover art that is freely and easily accessible</h3>
@@ -124,10 +129,11 @@ export default function Projects(props) {
                         <a href="https://critiquebrainz.org"
                            target="_blank"
                            rel="noopener noreferrer">
-                            <Image src="/assets/img/meb-logos/critiquebrainz.svg"
-                                   width="360"
-                                   height="360"
+                           <div className='image-container'>
+                                <Image className='image' src="/assets/img/meb-logos/critiquebrainz.svg"
+                                   layout='fill'
                                    alt="CritiqueBrainz"/>
+                            </div>
                         </a>
                     </div>
                     <div className="col-md-7 pt-5" data-bs-aos="fade-left">
@@ -150,10 +156,11 @@ export default function Projects(props) {
                         <a href="https://bookbrainz.org"
                            target="_blank"
                            rel="noopener noreferrer">
-                            <Image src="/assets/img/meb-logos/bookbrainz.svg"
-                                   width="360"
-                                   height="360"
+                            <div className='image-container'>
+                                <Image className='image' src="/assets/img/meb-logos/bookbrainz.svg"
+                                   layout='fill'
                                    alt="BookBrainz"/>
+                            </div>
                         </a>
                     </div>
                     <div className="col-md-7 pt-5 order-2 order-md-1" data-bs-aos="fade-right">
