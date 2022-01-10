@@ -889,3 +889,18 @@ section {
   padding-top: 30px;
   border-top: 1px solid #ddd;
 }
+
+.section-footer .image-container {
+  display: flex;
+  align-items: center;
+}
+
+.section-footer .image {
+  display: inline-block;
+  margin: 0 3px;
+  height: 24px;
+}
+
+.section-footer .copyright {
+  justify-content: center;
+}
