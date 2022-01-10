@@ -889,3 +889,11 @@ section {
   padding-top: 30px;
   border-top: 1px solid #ddd;
 }
+
+.section-footer .image {
+  display: flex;
+  align-items: center;
+}
+.section-footer .copyright {
+  justify-content: center;
+}

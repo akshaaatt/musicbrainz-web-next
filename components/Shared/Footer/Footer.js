@@ -6,8 +6,11 @@ const Footer = props => {
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-4">
-              <h3 className="navbar-brand text-brand"><Image src="/assets/img/meb-icons/MusicBrainz.svg" width="52" height="52" alt="image"/> <span className="color-purple">Music</span><span
-                  className="color-orange">Brainz</span></h3>
+              <p className="image navbar-brand text-brand">
+                <Image src="/assets/img/meb-icons/MusicBrainz.svg" width="52" height="52" alt="image"/>
+                <span className="color-purple">Music</span>
+                <span className="color-orange">Brainz</span>
+              </p>
               <br/>
               <p className="color-gray">
                 is an open music encyclopedia that collects music metadata and makes it available to the public.
@@ -52,23 +55,35 @@ const Footer = props => {
             <div className="col-sm-12 col-md-3 section-md-t3">
               <h3 className="w-title-a text-brand">Fellow Projects</h3>
               <ul className="list-unstyled">
-                <li className="item-list-a">
-                  <i className="bi bi-chevron-right"/> <Image src="/assets/img/meb-icons/ListenBrainz.svg" width="24" height="24" alt="image"/> <a href="https://listenbrainz.org/" target="_blank" rel="noopener noreferrer" >ListenBrainz</a>
+                <li className="image item-list-a">
+                  <i className="bi bi-chevron-right"/>
+                  <Image src="/assets/img/meb-icons/ListenBrainz.svg" width="24" height="24" alt="image"/>
+                  <a href="https://listenbrainz.org/" target="_blank" rel="noopener noreferrer" >ListenBrainz</a>
                 </li>
-                <li className="item-list-a">
-                  <i className="bi bi-chevron-right"/> <Image src="/assets/img/meb-icons/CritiqueBrainz.svg" width="24" height="24" alt="image"/> <a href="https://critiquebrainz.org/" target="_blank" rel="noopener noreferrer" >CritiqueBrainz</a>
+                <li className="image item-list-a">
+                  <i className="bi bi-chevron-right"/>
+                  <Image src="/assets/img/meb-icons/CritiqueBrainz.svg" width="24" height="24" alt="image"/>
+                  <a href="https://critiquebrainz.org/" target="_blank" rel="noopener noreferrer" >CritiqueBrainz</a>
                 </li>
-                <li className="item-list-a">
-                  <i className="bi bi-chevron-right"/> <Image src="/assets/img/meb-icons/Picard.svg" width="24" height="24" alt="image"/> <a href="https://picard.musicbrainz.org/" target="_blank" rel="noopener noreferrer" >Picard</a>
+                <li className="image item-list-a">
+                  <i className="bi bi-chevron-right"/>
+                  <Image src="/assets/img/meb-icons/Picard.svg" width="24" height="24" alt="image"/>
+                  <a href="https://picard.musicbrainz.org/" target="_blank" rel="noopener noreferrer" >Picard</a>
                 </li>
-                <li className="item-list-a">
-                  <i className="bi bi-chevron-right"/> <Image src="/assets/img/meb-icons/BookBrainz.svg" width="24" height="24" alt="image"/> <a href="https://bookbrainz.org/" target="_blank" rel="noopener noreferrer" >BookBrainz</a>
+                <li className="image item-list-a">
+                  <i className="bi bi-chevron-right"/>
+                  <Image src="/assets/img/meb-icons/BookBrainz.svg" width="24" height="24" alt="image"/>
+                  <a href="https://bookbrainz.org/" target="_blank" rel="noopener noreferrer" >BookBrainz</a>
                 </li>
-                <li className="item-list-a">
-                  <i className="bi bi-chevron-right"/> <Image src="/assets/img/meb-icons/AcousticBrainz.svg" width="24" height="24" alt="image"/> <a href="https://acousticbrainz.org/" target="_blank" rel="noopener noreferrer" >AcousticBrainz</a>
+                <li className="image item-list-a">
+                  <i className="bi bi-chevron-right"/>
+                  <Image src="/assets/img/meb-icons/AcousticBrainz.svg" width="24" height="24" alt="image"/>
+                  <a href="https://acousticbrainz.org/" target="_blank" rel="noopener noreferrer" >AcousticBrainz</a>
                 </li>
-                <li className="item-list-a">
-                  <i className="bi bi-chevron-right"/> <Image src="/assets/img/meb-icons/CoverArtArchive.svg" width="24" height="24" alt="image"/> <a href="https://coverartarchive.org" target="_blank" rel="noopener noreferrer" >Cover Art Archive</a>
+                <li className="image item-list-a">
+                  <i className="bi bi-chevron-right"/>
+                  <Image src="/assets/img/meb-icons/CoverArtArchive.svg" width="24" height="24" alt="image"/>
+                  <a href="https://coverartarchive.org" target="_blank" rel="noopener noreferrer" >Cover Art Archive</a>
                 </li>
 
               </ul>
@@ -106,7 +121,7 @@ const Footer = props => {
               </p>
             </div>
             <div className="col-md-6">
-              <p className="section-line">
+              <p className="section-line image copyright ">
                 Brought to you by <Image src="/assets/img/meb-icons/MetaBrainz.svg" width="24" height="24" alt="image"/> <span className="color-a"> MetaBrainz Foundation </span>
               </p>
             </div>
