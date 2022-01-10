@@ -1,7 +1,4 @@
-<h1 align="center">
-  <br>
-  <a href="https://github.com/metabrainz/musicbrainz-android/archive/master.zip"><img src="https://github.com/metabrainz/metabrainz-logos/blob/master/logos/MusicBrainz/SVG/MusicBrainz_logo.svg" alt="MusicBrainz Android"></a>
-</h1>
+<a href="https://musicbrainz-web-next.vercel.app"><img src="https://github.com/metabrainz/metabrainz-logos/blob/master/logos/MusicBrainz/SVG/MusicBrainz_logo.svg" alt="MusicBrainz"></a>
 
 MusicBrainz Web Interface using NextJs
 =======================================
