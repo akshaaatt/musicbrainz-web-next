@@ -11,19 +11,19 @@ function ThemeSwitchButton(props) {
         buttonClassName = "SwitchBtn";
     }
 
-    let activeDayIcon = `assets/img/${active}-theme/icon-day.svg`;
-    let activeNightIcon = `assets/img/${active}-theme/icon-night.svg`;
+    let activeDayIcon = `/assets/img/${active}-theme/icon-day.svg`;
+    let activeNightIcon = `/assets/img/${active}-theme/icon-night.svg`;
 
     return (
         <div className="DarkThemeSwitchBtn-wrapper">
             <picture className="ThemeIndicator-Icon">
-                <Image src={activeDayIcon} alt="icon for lite theme" />
+                <Image src={activeDayIcon} alt="icon for lite theme" width={150} height={150}/>
             </picture>
             <div className="SwitchBtn-Track" onClick={props.changeTheme}>
                 <button className={buttonClassName}/>
             </div>
             <picture className="ThemeIndicator-Icon">
-                <Image src={activeNightIcon} alt="icon for dark theme" />
+                <Image src={activeNightIcon} alt="icon for dark theme" width={150} height={150} />
             </picture>
         </div>
     );
