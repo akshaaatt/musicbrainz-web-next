@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function MainProfile(props) {
   return (
-    <section className="section profile">
+    <section className={"section profile " + props.theme}>
       <div className="row">
         <div className="col-12">
           <div className="card">
