@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import dynamic from 'next/dynamic';
 import {Modal} from "react-bootstrap";
 import Image from 'next/image';
+import Blog from "./Blog";
 
 const BarcodeScanner = dynamic(
     () => import('../../Utils/BarcodeScanner/BarcodeScanner'),
@@ -225,26 +226,7 @@ export default class Intro extends React.Component {
                                 </Carousel>
                             </div>
                             <div className={"col-lg-3 d-none d-lg-block"}>
-                                <div className="card">
-                                    <Image className="card-img-top" src="/assets/img/blogs.svg" width="128" height="48" alt="Blogs Logo"/>
-                                    <div className="card-body">
-                                        <h5 className="card-title text-center"><span className=" color-purple">News</span> & <span className="color-orange">Updates</span></h5>
-                                    </div>
-                                    <ul className="list-group list-group-flush">
-                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/10/07/picard-2-7-beta-1/" target="_blank" rel="noopener noreferrer" className="card-link">Picard 2.7 Beta 1</a></li>
-                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/10/06/picard-2-6-4-released/" className="card-link" target="_blank" rel="noopener noreferrer">Picard 2.6.4 released</a></li>
-                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/10/04/musicbrainz-server-update-2021-10-04/" className="card-link" target="_blank" rel="noopener noreferrer">MusicBrainz Server update, 2021-10-04</a></li>
-                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/09/20/musicbrainz-server-update-2021-09-20/" className="card-link" target="_blank" rel="noopener noreferrer">MusicBrainz Server update, 2021-09-20</a></li>
-                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/09/06/musicbrainz-server-update-2021-09-06/" className="card-link" target="_blank" rel="noopener noreferrer">MusicBrainz Server update, 2021-09-06</a></li>
-                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/09/01/acoustic-similarity-in-acousticbrainz/" className="card-link" target="_blank" rel="noopener noreferrer">Acoustic similarity in AcousticBrainz</a></li>
-                                        <li className={"list-group-item"}><a href="https://blog.metabrainz.org/2021/08/23/gsoc-2021-pin-recordings-and-critiquebrainz-integration-in-listenbrainz/" className="card-link" target="_blank" rel="noopener noreferrer">GSoC 2021: Pin Recordings and CritiqueBrainz Integration in ListenBrainz</a></li>
-                                    </ul>
-                                    <div className="card-body align-items-center d-flex justify-content-center">
-                                        <a href="https://twitter.com/MusicBrainz" target="_blank" rel="noopener noreferrer" className="card-link"> <i className="fab fa-twitter"/></a>
-                                        <a href="https://blog.metabrainz.org" className="card-link" target="_blank" rel="noopener noreferrer"> <i className="bi bi-rss-fill"/></a>
-                                        <a href="https://community.metabrainz.org" className="card-link" target="_blank" rel="noopener noreferrer">Community Forum</a>
-                                    </div>
-                                </div>
+                                <Blog></Blog>
                             </div>
                         </div>
                     </div>
