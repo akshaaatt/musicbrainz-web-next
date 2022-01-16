@@ -4,9 +4,6 @@ import dynamic from 'next/dynamic';
 import {Modal} from "react-bootstrap";
 import Image from 'next/image';
 
-
-
-
 const Blog = () => {
     const [blogDetails,setBlogDetails] = useState([{}])
 
@@ -48,4 +45,4 @@ const Blog = () => {
     )
 }
 
-export default Blog
+export default Blog;

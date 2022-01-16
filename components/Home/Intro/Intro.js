@@ -226,7 +226,7 @@ export default class Intro extends React.Component {
                                 </Carousel>
                             </div>
                             <div className={"col-lg-3 d-none d-lg-block"}>
-                                <Blog></Blog>
+                                <Blog/>
                             </div>
                         </div>
                     </div>
