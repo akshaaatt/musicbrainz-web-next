@@ -12,7 +12,7 @@ export default function Projects(props) {
                         Explore the fellow Brainz projects as well!
                     </p>
                 </div>
-
+                
                 <div className="row content align-items-center justify-content-center">
                     <div className="col-md-5 adjust-size" data-bs-aos="fade-right">
                         <a href="https://listenbrainz.org"
@@ -41,6 +41,7 @@ export default function Projects(props) {
                         </p>
                     </div>
                 </div>
+                <hr style={{width:"100%"}} />
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 order-1 order-md-2 adjust-size" data-bs-aos="fade-left">
@@ -68,6 +69,7 @@ export default function Projects(props) {
                         </p>
                     </div>
                 </div>
+                <hr style={{width:"100%"}} />
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 adjust-size" data-bs-aos="fade-right">
@@ -95,6 +97,7 @@ export default function Projects(props) {
                         </p>
                         </div>
                 </div>
+                <hr style={{width:"100%"}} />
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 order-1 order-md-2 adjust-size" data-bs-aos="fade-left">
@@ -123,6 +126,7 @@ export default function Projects(props) {
                         </p>
                     </div>
                 </div>
+                <hr style={{width:"100%"}} />
 
                 <div className="row content align-items-center">
                     <div className="col-md-5 adjust-size" data-bs-aos="fade-right">
@@ -150,7 +154,8 @@ export default function Projects(props) {
                         </p>
                     </div>
                 </div>
-
+                <hr style={{width:"100%"}} />
+                
                 <div className="row content align-items-center">
                     <div className="col-md-5 order-1 order-md-2 adjust-size" data-bs-aos="fade-left">
                         <a href="https://bookbrainz.org"
