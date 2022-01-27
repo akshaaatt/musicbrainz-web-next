@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Blog from "./Blog";
 
 const BarcodeScanner = dynamic(
-    () => import('../../Utils/BarcodeScanner/BarcodeScanner'),
+    () => import('../Shared/BarcodeScanner'),
     { ssr: false }
 )
 

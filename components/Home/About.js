@@ -15,7 +15,6 @@ export default function About(props) {
                             MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public.
                             <br/><br/>
                             MusicBrainz aims to be:
-
                         </p>
                         <ul>
                             <li><i className="bi bi-check-circle"/>The ultimate source of music information by allowing anyone to contribute and releasing the data under open licenses.

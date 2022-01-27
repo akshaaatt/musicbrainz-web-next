@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Footer = props => {
   return (
-      <section className={"section-footer "+props.theme}>
+      <section className={"section-footer "+ props.theme}>
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-4">

@@ -1,9 +1,9 @@
 import React, { useCallback, useState } from "react";
-import Header from "../components/Shared/Header/Header";
-import Footer from "../components/Shared/Footer/Footer";
-import ScrollToTop from "../components/Utils/ScrollToTop/ScrollToTop";
+import Header from "../components/Shared/Header";
+import Footer from "../components/Shared/Footer";
+import ScrollToTop from "../components/Shared/ScrollToTop";
 import Register from "../components/Account/Register";
-import { themeSetting } from "../components/Utils/Common";
+import { themeSetting } from "../components/Shared/UISettings";
 
 export default function RegisterPage() {
   const [dark, setDark] = useState(themeSetting.setting);

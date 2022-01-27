@@ -1,5 +1,5 @@
 import React from "react";
-import ThemeSwitchButton from "../Utils/ThemeSwitchButton/ThemeSwitchButton";
+import ThemeSwitchButton from "../Shared/ThemeSwitchButton";
 import Image from "next/image";
 
 export default function MainProfile(props) {

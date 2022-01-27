@@ -134,9 +134,9 @@ export default function Register(props) {
               <Image
                 src="/assets/img/meb-icons/all_projects.jpg"
                 className="card-img-top imz"
-                alt="..."
-                width={300}
-                height={300}
+                alt="All Projects"
+                width="200"
+                height="200"
               />
               <div className="card-body">
                 <p className="card-text">
