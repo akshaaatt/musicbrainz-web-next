@@ -12,7 +12,7 @@ import Projects from "../components/Home/Projects";
 import { themeSetting } from "../components/Shared/UISettings";
 
 //Images
-const logo = '/assets/img/meb-logos/MusicBrainz.svg'
+const logo = "/assets/img/meb-logos/MusicBrainz.svg"
 
 export default function Home() {
   const [dark, setDark] = useState(themeSetting.setting);
