@@ -11,7 +11,7 @@ const Footer = props => {
                       "col-sm-12 col-md-4": "col-sm-12 col-md-6"
                 }>
               <h2>
-                <Image src="/assets/img/meb-logos/MusicBrainz.svg" width="240" height="60" alt={props.projectName}/>
+                <Image src={props.logo} width="240" height="60" alt={props.projectName}/>
               </h2>
               <br/>
               <p className="color-gray">
