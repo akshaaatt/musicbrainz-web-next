@@ -1,0 +1,60 @@
+.profile {
+  background: var(--main-bg);
+  color: var(--color);
+  .profile-card {
+    img {
+      max-width: 120px;
+    }
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--color);
+      margin: 10px 0 0 0;
+    }
+    h3 {
+      font-size: 18px;
+    }
+    .social-links {
+      a {
+        font-size: 20px;
+        display: inline-block;
+        color: var(--color);
+        line-height: 0;
+        margin-right: 10px;
+        transition: 0.3s;
+        &:hover {
+          color: var(--color);
+        }
+      }
+    }
+  }
+  .card {
+    background: var(--background-color);
+  }
+  .profile-overview {
+    .row {
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+    .card-title {
+      color: var(--color);
+    }
+    .label {
+      font-weight: 600;
+      color: var(--color);
+    }
+  }
+  .profile-edit {
+    label {
+      font-weight: 600;
+      color: var(--color);
+    }
+    img {
+      max-width: 120px;
+    }
+  }
+  .form-control {
+    background: var(--main-bg);
+    color: var(--color);
+  }
+}

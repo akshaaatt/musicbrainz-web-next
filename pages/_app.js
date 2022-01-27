@@ -2,12 +2,12 @@ import Head from "next/head";
 import 'bootstrap/dist/css/bootstrap.css';
 import "bootstrap-icons/font/bootstrap-icons.css" ;
 import "react-multi-carousel/lib/styles.css";
-import '../styles/globals.css';
-import '../styles/Home.css';
-import '../styles/ThemeSwitchButton.css';
-import '../styles/FAQs.css';
-import '../styles/Profile.css';
-import '../styles/Account.css';
+import '../styles/globals.scss';
+import '../styles/Home.scss';
+import '../styles/ThemeSwitchButton.scss';
+import '../styles/FAQs.scss';
+import '../styles/Profile.scss';
+import '../styles/Account.scss';
 
 export default function App({ Component, pageProps }) {
     if (typeof window !== "undefined") {
