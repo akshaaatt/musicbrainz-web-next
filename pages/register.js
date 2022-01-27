@@ -25,7 +25,14 @@ export default function RegisterPage() {
         isDarkThemeActive={dark}
       />
       <Register theme={theme} />
-      <Footer theme={theme} />
+        <Footer
+            theme={theme}
+            projectName="musicbrainz"
+            projectDescription="MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public."
+            sourceCode="https://github.com/metabrainz/musicbrainz-server"
+            logo="/assets/img/meb-logos/MusicBrainz.svg"
+            columns={4}
+        />
       <ScrollToTop
         icon="bi bi-caret-up-fill"
         backgroundColor="#EB743B"

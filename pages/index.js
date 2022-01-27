@@ -11,9 +11,6 @@ import Explore from "../components/Home/Explore";
 import Projects from "../components/Home/Projects";
 import { themeSetting } from "../components/Shared/UISettings";
 
-//Images
-const logo = "/assets/img/meb-logos/MusicBrainz.svg"
-
 export default function Home() {
   const [dark, setDark] = useState(themeSetting.setting);
   let theme = dark ? "theme-dark" : "theme-light";
@@ -45,7 +42,7 @@ export default function Home() {
           projectName="musicbrainz"
           projectDescription="MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public."
           sourceCode="https://github.com/metabrainz/musicbrainz-server"
-          logo={logo}
+          logo="/assets/img/meb-logos/MusicBrainz.svg"
           columns={4}
       />
       <ScrollToTop
