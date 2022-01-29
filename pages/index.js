@@ -14,6 +14,7 @@ import { themeSetting } from "../components/Shared/UISettings";
 export default function Home() {
   const [dark, setDark] = useState(themeSetting.setting);
   let theme = dark ? "theme-dark" : "theme-light";
+  const searchOptions = ['Artist', 'Release', 'Recording', 'Label', 'Work', 'Release Group', 'Area', 'Place', 'Annotation', 'CD Stub', 'Editor', 'Tag', 'Instrument', 'Series', 'Event', 'Documentation'];
 
   const toggleDarkMode = useCallback(function () {
     setDark(prevState => {
@@ -42,7 +43,7 @@ export default function Home() {
           projectName="musicbrainz"
           projectDescription="MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public."
           sourceCode="https://github.com/metabrainz/musicbrainz-server"
-          logo="/assets/img/meb-logos/MusicBrainz.svg"
+          logo="/assets/img/meb-logos/musicbrainz.svg"
           columns={4}
       />
       <ScrollToTop
