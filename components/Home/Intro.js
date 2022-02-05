@@ -103,7 +103,6 @@ export default class Intro extends React.Component {
 
 
         return (
-            <div>
                 <section id="intro" className={"intro d-flex align-items-center "+this.props.theme}>
                     <div className="container">
                         <div className="row">
@@ -112,7 +111,6 @@ export default class Intro extends React.Component {
                                 <h2 data-bs-aos="fade-up" data-bs-aos-delay="400" >
                                     World&apos;s Biggest Open Source Music Database
                                 </h2>
-
                                 <div className="row search-margins">
                                     <div className="col-8 col-md-10">
                                         <input type="search" name="query"
@@ -231,7 +229,6 @@ export default class Intro extends React.Component {
                         </div>
                     </div>
                 </section>
-            </div>
         )
     }
 }
