@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from "react";
 import Header from "../components/Shared/Header";
+import Footer from "../components/Shared/Footer";
 import ScrollToTop from "../components/Shared/ScrollToTop";
 import Supporters from "../components/Home/Supporters";
 import Intro from "../components/Home/Intro";
@@ -9,7 +10,6 @@ import Facts from "../components/Home/Facts";
 import Explore from "../components/Home/Explore";
 import Projects from "../components/Home/Projects";
 import { themeSetting } from "../components/Shared/UISettings";
-import Footer from "../components/Shared/Footer";
 
 export default function Home() {
   const [dark, setDark] = useState(themeSetting.setting);
@@ -37,7 +37,14 @@ export default function Home() {
       <Explore theme={theme} />
       <Supporters theme={theme} />
       <AppDownload theme={theme} />
-      <Footer />
+      <Footer
+          theme={theme}
+          projectName="musicbrainz"
+          projectDescription="MusicBrainz is an open music encyclopedia that collects music metadata and makes it available to the public."
+          sourceCode="https://github.com/metabrainz/musicbrainz-server"
+          logo="/assets/img/meb-logos/MusicBrainz.svg"
+          columns={4}
+      />
       <ScrollToTop
         icon="bi bi-caret-up-fill"
         backgroundColor="#EB743B"
