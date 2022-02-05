@@ -107,7 +107,7 @@ export default class Intro extends React.Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-9 d-flex flex-column justify-content-center">
-                                <h1 data-bs-aos="fade-up" style={{marginTop: "20px"}}>The Music Database</h1>
+                                <h1 data-bs-aos="fade-up" style={{marginTop: "100px"}}>The Music Database</h1>
                                 <h2 data-bs-aos="fade-up" data-bs-aos-delay="400" >
                                     World&apos;s Biggest Open Source Music Database
                                 </h2>
@@ -179,11 +179,19 @@ export default class Intro extends React.Component {
                                     {
                                         chipData.map((data) => {
                                             if(data.key===0){
-                                                return <div id={"type"+data.key} className="chip chip--active" onClick={() => onChipClick(data.label)}>{data.label}</div>
+                                                return <div id={"type"+data.key}
+                                                            className="chip chip--active"
+                                                            onClick={() => onChipClick(data.label)}>
+                                                    {data.label}
+                                                </div>
                                             }
                                             return (
                                                 // eslint-disable-next-line react/jsx-key
-                                                <div id={"type"+data.key} className="chip" onClick={() => onChipClick(data.label)}>{data.label}</div>
+                                                <div id={"type"+data.key}
+                                                     className="chip"
+                                                     onClick={() => onChipClick(data.label)}>
+                                                    {data.label}
+                                                </div>
                                             );
                                         })
                                     }
@@ -197,6 +205,7 @@ export default class Intro extends React.Component {
                                     autoPlaySpeed={6000}
                                     itemClass="slider-image-item"
                                     responsive={responsive}
+                                    className="standardize"
                                     containerClass="carousel-container-with-scrollbar"
                                     additionalTransform={-this.state.additionalTransform}
                                     beforeChange={nextSlide => {
@@ -210,16 +219,26 @@ export default class Intro extends React.Component {
                                 >
                                     {
                                         this.state.posts ? this.state.posts.map((artwork, index) => {
-                                            console.log(artwork["im:image"][2].label);
+                                            console.log(artwork["im:image"][2].label.replace("170x170bb.png", "300x300bb.png"));
                                             return (
-                                                <div className="card text-left mt-5" key={index}>
-                                                    <Image width="275" height="250" src={artwork["im:image"][2].label} alt="Cover Art"/>
-                                                </div>
+                                                <Image
+                                                    width="300"
+                                                    height="300"
+                                                    layout="fill"
+                                                    key={index}
+                                                    src={artwork["im:image"][2].label.replace("170x170bb.png", "300x300bb.png")}
+                                                    alt="Cover Art"
+                                                />
                                             )
                                         }) :
-                                            <div className="card text-left mt-5" key="1">
-                                                <Image width="256" height="256" src="/assets/img/demo.jpg" alt="Cover Art"/>
-                                            </div>
+                                            <Image
+                                                width="300"
+                                                height="300"
+                                                layout="fixed"
+                                                key="1"
+                                                src="/assets/img/demo.jpg"
+                                                alt="Cover Art"
+                                            />
                                     }
                                 </Carousel>
                             </div>

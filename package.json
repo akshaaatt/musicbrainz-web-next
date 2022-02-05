@@ -13,6 +13,9 @@
     "prod": "npm run build && npm run export"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.17",
     "@metabrainz/design-system": "^1.0.2",
     "@zxing/library": "^0.19.1",
     "bootstrap": "^5.1.3",

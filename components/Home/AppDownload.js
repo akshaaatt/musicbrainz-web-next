@@ -1,5 +1,6 @@
 export default function AppDownload(props) {
     return(
+        <div>
         <section className={"section cta-section "+props.theme}>
             <div className="container">
                 <div className="row center-p">
@@ -25,5 +26,6 @@ export default function AppDownload(props) {
                 </div>
             </div>
         </section>
+        </div>
     )
 }
