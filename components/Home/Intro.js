@@ -106,8 +106,11 @@ export default class Intro extends React.Component {
                 <section id="intro" className={"intro d-flex align-items-center "+this.props.theme}>
                     <div className="container">
                         <div className="row">
-                            <div className="col-lg-9 d-flex flex-column justify-content-center">
-                                <h1 data-bs-aos="fade-up" style={{marginTop: "100px"}}>The Music Database</h1>
+                            <div
+                                className="col-lg-9 d-flex flex-column justify-content-center align-content-center"
+                                style={{marginTop: "80px"}}
+                            >
+                                <h1 data-bs-aos="fade-up" >The Music Database</h1>
                                 <h2 data-bs-aos="fade-up" data-bs-aos-delay="400" >
                                     World&apos;s Biggest Open Source Music Database
                                 </h2>
@@ -219,21 +222,21 @@ export default class Intro extends React.Component {
                                 >
                                     {
                                         this.state.posts ? this.state.posts.map((artwork, index) => {
-                                            console.log(artwork["im:image"][2].label.replace("170x170bb.png", "300x300bb.png"));
+                                            console.log(artwork["im:image"][2].label.replace("170x170bb.png", "250x250bb.png"));
                                             return (
                                                 <Image
-                                                    width="300"
-                                                    height="300"
+                                                    width="250"
+                                                    height="250"
                                                     layout="fill"
                                                     key={index}
-                                                    src={artwork["im:image"][2].label.replace("170x170bb.png", "300x300bb.png")}
+                                                    src={artwork["im:image"][2].label.replace("170x170bb.png", "250x250bb.png")}
                                                     alt="Cover Art"
                                                 />
                                             )
                                         }) :
                                             <Image
-                                                width="300"
-                                                height="300"
+                                                width="250"
+                                                height="250"
                                                 layout="fixed"
                                                 key="1"
                                                 src="/assets/img/demo.jpg"

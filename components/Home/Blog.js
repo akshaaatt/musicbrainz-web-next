@@ -8,7 +8,7 @@ const Blog = () => {
         let response = await fetch(`https://public-api.wordpress.com/rest/v1.1/sites/blog.metabrainz.org/posts/`)
         response = await response.json()
         const objectArray =[]
-        for(let postIndex = 0;postIndex<=8; postIndex++ ){
+        for(let postIndex = 0;postIndex<=7; postIndex++ ){
             const object = {};
             object.id=response.posts[postIndex].ID
             object.title=response.posts[postIndex].title
