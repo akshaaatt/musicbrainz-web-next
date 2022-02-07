@@ -54,12 +54,7 @@ export default function Header(props) {
                 <li className="nav-item">
                   <a href="https://blog.metabrainz.org" target="_blank" rel="noopener noreferrer" className="nav-link " >Community</a>
                 </li>
-                <Link href="/search">
-                <li className='nav-item'>
-                <a className="nav-link " >Search</a>
-                </li>
-                </Link>
-
+                
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Username</a>
                   <div className="dropdown-menu">
