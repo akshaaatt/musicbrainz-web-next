@@ -730,7 +730,7 @@ section {
 .section-with-bg {
   background-color: var(--main-bg);
 }
-.cta-section {
+.download-section {
   background: linear-gradient( to right, var(--intro-bg-first) 0%, var(--intro-bg-second) 100% );
   color: #fff;
   h2 {
@@ -850,7 +850,7 @@ section {
   }
 }
 @media screen and (max-width: 768px) {
-  .cta-section {
+  .download-section {
     h2 {
       font-size: 2rem;
     }

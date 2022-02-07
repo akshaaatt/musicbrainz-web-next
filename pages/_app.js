@@ -2,6 +2,7 @@ import Head from "next/head";
 import 'bootstrap/dist/css/bootstrap.css';
 import "bootstrap-icons/font/bootstrap-icons.css" ;
 import "react-multi-carousel/lib/styles.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import '../styles/globals.scss';
 import '../styles/Home.scss';
 import '../styles/ThemeSwitchButton.scss';
@@ -31,9 +32,6 @@ export default function App({ Component, pageProps }) {
                       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
                       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
                       crossOrigin="anonymous"/>
-
-                <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
-                      rel="stylesheet"/>
 
                 <meta name="msapplication-TileColor" content="#da532c"/>
                 <meta name="theme-color" content="#ffffff"/>
