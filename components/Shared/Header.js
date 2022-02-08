@@ -54,7 +54,7 @@ export default function Header(props) {
                 <li className="nav-item">
                   <a href="https://blog.metabrainz.org" target="_blank" rel="noopener noreferrer" className="nav-link " >Community</a>
                 </li>
-
+                
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Username</a>
                   <div className="dropdown-menu">
@@ -101,6 +101,9 @@ export default function Header(props) {
                          return false;
                        }
                      }}
+                     onChange={event =>{
+                       changeIcon();
+                     }}
                      placeholder="Search"/>
             </div>
 
@@ -125,8 +128,8 @@ export default function Header(props) {
 
               </select>
             </div>
-            <button type="button" onClick={attach} className="btn btn-b-n">
-              <i className="bi bi-search"/>
+            <button  id='search_button' type="button" onClick={attach} className="btn btn-b-n">
+                <Image  alt= "search_logo" src="/assets/img/advance_search.svg" width="22px" height="22px"/>
             </button>
 
           </div>
@@ -158,3 +161,14 @@ const attach = e => {
   document.body.classList.remove('box-collapse-closed')
 }
 
+const changeIcon = () =>{
+  const query = document.getElementById('searchInputHeader');
+  let search_button = document.getElementById('search_button')
+  if(query.value.length <= 1){
+    search_button.innerHTML = `<Image alt= "search_logo" src="/assets/img/advance_search.svg" width="20px" height="20px" />`
+  }
+  else{
+    search_button.innerHTML = `<Image alt= "search_logo" src="/assets/img/search.svg" width="20px" height="20px" />`
+  }
+  
+}
