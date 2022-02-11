@@ -51,6 +51,11 @@ export default function Header(props) {
                   <a href="https://musicbrainz.org/doc/MusicBrainz_API" target="_blank" rel="noopener noreferrer" className="nav-link " >API</a>
                 </li>
 
+                <li className='nav-item'>
+                    <Link href="/search">
+                      <a className='nav-link'>Search</a>
+                    </Link>
+                </li>
                 <li className="nav-item">
                   <a href="https://blog.metabrainz.org" target="_blank" rel="noopener noreferrer" className="nav-link " >Community</a>
                 </li>
