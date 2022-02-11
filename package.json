@@ -28,7 +28,8 @@
     "react-multi-carousel": "^2.6.5",
     "react-webcam": "^6.0.1",
     "sass": "^1.49.0",
-    "sharp": "^0.29.3"
+    "sharp": "^0.29.3",
+    "swiper": "^8.0.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.8",
