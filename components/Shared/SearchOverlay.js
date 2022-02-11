@@ -51,7 +51,7 @@ export default function SearchOverlay(props)  {
         window.open("https://musicbrainz.org/"+"search?type=" + searchType +
             "&query=" +query.value +
             "&limit="+ limitUsed +
-            "&method=" + methodUsed, "_newTab");
+            "&method=" + methodUsed, "_self");
         return false;
     }
 
