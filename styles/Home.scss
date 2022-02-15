@@ -380,7 +380,7 @@
 }
 .intro {
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background: linear-gradient( to right, var(--intro-bg-first) 0%, var(--intro-bg-second) 100% );
   h1 {
     margin: 0;
@@ -418,8 +418,7 @@
     }
   }
   .card {
-    height: 75vh;
-    margin-top: 70px;
+    height: 80vh;
     background: var(--main-bg);
     color: var(--color);
   }

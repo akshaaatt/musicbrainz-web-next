@@ -8,7 +8,7 @@ export default function Header(props) {
   return (
       <>
         <SearchOverlay theme={props.theme}/>
-        <nav className={"navbar navbar-default navbar-trans navbar-expand-lg fixed-top " + props.theme}>
+        <nav className={"navbar navbar-default navbar-trans navbar-expand-lg " + props.theme}>
           <div className="container">
             <button className="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
               <span/>
@@ -54,7 +54,7 @@ export default function Header(props) {
                 <li className="nav-item">
                   <a href="https://blog.metabrainz.org" target="_blank" rel="noopener noreferrer" className="nav-link " >Community</a>
                 </li>
-                
+
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Username</a>
                   <div className="dropdown-menu">
@@ -170,5 +170,5 @@ const changeIcon = () =>{
   else{
     search_button.innerHTML = `<Image alt= "search_logo" src="/assets/img/search.svg" width="20px" height="20px" />`
   }
-  
+
 }

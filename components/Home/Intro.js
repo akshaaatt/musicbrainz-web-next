@@ -108,7 +108,6 @@ export default class Intro extends React.Component {
                         <div className="row">
                             <div
                                 className="col-lg-9 d-flex flex-column justify-content-center align-content-center"
-                                style={{marginTop: "60px"}}
                             >
                                 <h1 data-bs-aos="fade-up" >The Music Database</h1>
                                 <h2 data-bs-aos="fade-up" data-bs-aos-delay="400" >
