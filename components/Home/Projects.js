@@ -4,7 +4,6 @@ export default function Projects(props) {
     return(
         <section id="features" className={"section-bg "+props.theme}>
             <div className="container">
-
                 <div className="section-title">
                     <h2 data-bs-aos="fade-in">Other MetaBrainz Projects</h2>
                     <p data-bs-aos="fade-in">
