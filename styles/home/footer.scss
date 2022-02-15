@@ -1,0 +1,27 @@
+.section-footer {
+  color: var(--color);
+  padding-bottom: 10px;
+  background: var(--main-bg);
+  ul {
+    line-height: 2;
+  }
+  .item-list-a {
+    i {
+      font-size: 18px;
+      padding-right: 4px;
+      color: var(--secondary-color);
+    }
+  }
+  .image-container {
+    display: flex;
+    align-items: center;
+  }
+  .image {
+    display: inline-block;
+    margin: 0 3px;
+    height: 24px;
+  }
+  .copyright {
+    justify-content: center;
+  }
+}
