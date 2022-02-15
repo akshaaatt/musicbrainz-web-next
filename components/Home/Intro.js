@@ -98,7 +98,7 @@ export default class Intro extends React.Component {
             else{
                 searchType = typeCurrent.replace(' ','_').toLowerCase()
             }
-            window.open("https://musicbrainz.org/"+"search?type=" + searchType + "&query=" +query.value, "_newTab");
+            window.open("https://musicbrainz.org/"+"search?type=" + searchType + "&query=" +query.value, "_self");
         }
 
 
@@ -137,7 +137,7 @@ export default class Intro extends React.Component {
                                                        else{
                                                            searchType = typeCurrent.replace(' ','_').toLowerCase()
                                                        }
-                                                       window.open("https://musicbrainz.org/"+"search?type=" + searchType + "&query=" +query.value, "_newTab");
+                                                       window.open("https://musicbrainz.org/"+"search?type=" + searchType + "&query=" +query.value, "_self");
                                                        return false;
                                                    }
                                                }}
@@ -160,7 +160,7 @@ export default class Intro extends React.Component {
                                                     onUpdate={(err, result) => {
                                                         if (result)  {
                                                             if(result.getText() !== this.state.data) {
-                                                                window.open("https://musicbrainz.org/search?advanced=1&type=release&query=barcode%3A" + result.getText(), "_newTab");
+                                                                window.open("https://musicbrainz.org/search?advanced=1&type=release&query=barcode%3A" + result.getText(), "_self");
                                                             }
                                                             this.setState({ data: result.getText() });
                                                         }
