@@ -7,17 +7,14 @@ export default function Sidebar(props) {
             <div className="row">
                 <div className="col-sm-auto bg-light sticky-top">
                     <div className="d-flex flex-sm-column flex-row flex-nowrap bg-light align-items-center sticky-top">
-                        <a href="/" className="d-block p-3 link-dark text-decoration-none" title=""
-                           data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
-                            <Image
-                                src="/assets/img/meb-logos/musicbrainz.svg"
-                                className="image"
-                                alt="image"
-                                width="180"
-                                height="90"
-                                layout='fixed'
-                            />
-                        </a>
+                        <Image
+                            src="/assets/img/meb-logos/musicbrainz.svg"
+                            className="image"
+                            alt="image"
+                            width="180"
+                            height="90"
+                            layout='fixed'
+                        />
                         <ul className="nav nav-pills nav-flush flex-sm-column flex-row flex-nowrap mb-auto mx-auto text-center align-items-center">
                             <li className="nav-item">
                                 <a href="#" className="nav-link py-3 px-2" title="" data-bs-toggle="tooltip"
