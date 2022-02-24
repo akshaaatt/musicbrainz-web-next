@@ -13,6 +13,7 @@ import '../styles/ThemeSwitchButton.scss';
 import '../styles/FAQs.scss';
 import '../styles/Profile.scss';
 import '../styles/Account.scss';
+import '../styles/Search.scss'
 
 export default function App({ Component, pageProps }) {
     if (typeof window !== "undefined") {
