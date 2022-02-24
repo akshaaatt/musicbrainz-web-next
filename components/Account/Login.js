@@ -5,14 +5,14 @@ export default function Login(props) {
   return (
     <section
       className={
-        "section account min-vh-100 d-flex flex-column align-items-center justify-content-center py-4 " +
+        "section account " +
         props.theme
       }
     >
       <div className="container">
         <div className="row justify-content-center">
-          <div className="col-lg-6 col-md-6 d-flex flex-column align-items-center justify-content-center">
-            <div className="card mb-3">
+          <div className="col-6">
+            <div className="card">
               <Image
                 src="/assets/img/meb-icons/all_projects.jpg"
                 className="card-img-top imz"
@@ -22,14 +22,14 @@ export default function Login(props) {
               />
               <div className="card-body">
                 <div className="pt-4 pb-2">
-                  <h5 className="card-title text-center pb-0 fs-4">
+                  <h5 className="card-title text-center">
                     Login to Your Account
                   </h5>
                   <p className="text-center small">
                     Enter your username & password to login
                   </p>
                 </div>
-                <form className="row g-3 needs-validation" noValidate>
+                <form className="row needs-validation" noValidate>
                   <div className="col-12">
                     <label htmlFor="yourUsername" className="form-label">
                       Username
