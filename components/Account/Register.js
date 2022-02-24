@@ -5,17 +5,17 @@ export default function Register(props) {
   return (
     <section
       className={
-        "section account min-vh-100 d-flex flex-column align-items-center justify-content-center py-4 " +
+        "section account " +
         props.theme
       }
     >
       <div className="container">
         <div className="row">
-          <div className="col-lg-5 col-md-6 d-flex flex-column align-items-center justify-content-center">
+          <div className="col-lg-5 col-md-6">
             <div className="card mb-3">
               <div className="card-body">
                 <div className="pt-4 pb-2">
-                  <h5 className="card-title text-center pb-0 fs-4">
+                  <h5 className="card-title text-center">
                     Create an Account
                   </h5>
                   <p className="text-center small">
@@ -129,8 +129,8 @@ export default function Register(props) {
               </div>
             </div>
           </div>
-          <div className="col-lg-7 col-md-6 d-flex flex-column align-items-center justify-content-center">
-            <div className="card mb-3">
+          <div className="col-lg-7 col-md-6 align-items-center justify-content-center">
+            <div className="card" style={{height: "595px"}}>
               <Image
                 src="/assets/img/meb-icons/all_projects.jpg"
                 className="card-img-top imz"
@@ -143,22 +143,24 @@ export default function Register(props) {
                   <b>
                     Note that any contributions you make to MusicBrainz will be
                     released into the Public Domain and/or licensed under a
-                    Creative Commons by-nc-sa license. Furthermore, you give the
-                    MetaBrainz Foundation the right to license this data for
-                    commercial use.
+                    Creative Commons by-nc-sa license.
+                    <br/>
+                    <br/>
+                    Furthermore, you give the MetaBrainz Foundation the right to license this data for commercial use.
                   </b>
                   <br />
                   <br />
-                  MusicBrainz believes strongly in the privacy of its users! Any
-                  personal information you choose to provide will not be sold or
-                  shared with anyone else. For full details, please read our
-                  Privacy Policy.
+                  MusicBrainz believes strongly in the privacy of its users!
+                  <br/>
+                  <br/>
+                  Any personal information you choose to provide will not be sold or shared with anyone else. For full details, please read our Privacy Policy.
                   <br />
                   <br />
                   You may remove your personal information from our services
                   anytime by deleting your account. For more details, see our
                   GDPR compliance statement.
                 </p>
+                <br/>
                 <p className="card-text">
                   <small className="text-muted">
                     Please read our license page for more details.
