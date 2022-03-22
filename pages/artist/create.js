@@ -1,9 +1,9 @@
 import React, { useCallback, useState, useEffect } from "react";
-import Header from "../../components/Shared/Header/Header";
-import Footer from "../../components/Shared/Footer/Footer";
+import Header from "../../components/Shared/Header";
+import Footer from "../../components/Shared/Footer";
 import CreateArtist from "../../components/Edit/CreateArtist/CreateArtist";
-import ScrollToTop from "../../components/Utils/ScrollToTop/ScrollToTop";
-import { themeSetting } from "../../components/Utils/Common";
+import ScrollToTop from "../../components/Shared/ScrollToTop";
+import { themeSetting } from "../../components/Shared/UISettings";
 
 export default function ProfilePage() {
   const [dark, setDark] = useState(themeSetting.setting);
