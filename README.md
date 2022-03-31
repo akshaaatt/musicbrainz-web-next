@@ -7,7 +7,7 @@ MusicBrainz is the web frontend to the MusicBrainz Database
 and is accessible at http://musicbrainz.org. 
 
 This version at:
-- https://musicbrainz-web-next-akshaaatt.vercel.app
+- https://musicbrainz-web-next.vercel.app
 - https://musicbrainz-web.web.app
 
 MusicBrainz is a user-maintained open community that collects music metadata
