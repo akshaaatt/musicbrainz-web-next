@@ -6,6 +6,9 @@ MusicBrainz Web Interface using NextJs
 MusicBrainz is the web frontend to the MusicBrainz Database
 and is accessible at http://musicbrainz.org. 
 
+Official work available at https://test.musicbrainz.org
+and repository at https://github.com/metabrainz/musicbrainz-server
+
 This version at:
 - https://musicbrainz-web-next.vercel.app
 - https://musicbrainz-web.web.app
