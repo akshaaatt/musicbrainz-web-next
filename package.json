@@ -28,7 +28,7 @@
     "react-multi-carousel": "^2.6.5",
     "react-webcam": "^6.0.1",
     "sass": "^1.49.0",
-    "sharp": "^0.29.3",
+    "sharp": "^0.30.5",
     "swiper": "^8.0.3"
   },
   "devDependencies": {
